@@ -18,7 +18,7 @@
 ## Operación semanal (desde paso 5, acordado 25/10/2026)
 - Aviso agendado a ESTE chat cada domingo 10:00 (Chile); al terminar cada semana se agenda el siguiente.
 - Flujo: investigar → JSON → render_semana.py → GitHub → borrador Metricool → vista previa en chat → "sí" de Bruno → programar.
-- Publicación: domingo 19:00, PÚBLICA, sin música (revisar música tras 3 semanas con métricas).
+- Publicación: domingo 19:00, PÚBLICA en TikTok y YouTube directamente desde Metricool (Bruno no debe entrar a las apps a cambiar privacidad), sin música (revisar música tras 3 semanas con métricas).
 - Aprobación: "sí" explícito en el chat. Si llega después de las 19:00 → publicar 15 min después. Sin respuesta al lunes 12:00 → se salta la semana.
 - Procedimiento detallado: RUNBOOK.md.
 

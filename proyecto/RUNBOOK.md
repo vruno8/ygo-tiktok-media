@@ -27,7 +27,11 @@ Antes de empezar: leer `DECISIONES.md`.
 - [ ] Verificar que una URL raw.githubusercontent.com responda 200 image/jpeg.
 
 ## 5. Borrador + aprobación
-- [ ] Crear el post en Metricool como BORRADOR (`draft: true`), TikTok, público, sin música, fecha domingo 19:00.
+- [ ] Generar también el Short: video ~30 s desde las láminas (portada con "Sigue mirando ▸▸" en vez de "Desliza").
+- [ ] Crear en Metricool 2 BORRADORES (`draft: true`), fecha domingo 19:00, ambos PÚBLICOS:
+      TikTok carrusel → `privacyOption: "PUBLIC_TO_EVERYONE"`, sin música.
+      YouTube Short → `privacy: "public"`, type short, madeForKids false, categoría GAMING.
+      (Privado solo en pilotos/pruebas acordadas explícitamente.)
 - [ ] Enviar a Bruno en el chat: vista general + caption + lista de dudas/fuentes en conflicto.
 - [ ] Esperar "sí" explícito. Sin "sí" no se programa.
 - [ ] Con "sí": actualizar a programado (`draft: false`). Si el "sí" llega después de las 19:00, publicar 15 min después.

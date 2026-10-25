@@ -28,6 +28,9 @@
 - madeForKids = false (contenido NO dirigido a niños; no implica restricción 18+).
 - Sin audio por ahora. Si Bruno entrega un MP3 con licencia, se incrusta en el video.
 - Una sola aprobación cubre TikTok + YouTube.
+- Short piloto: programado 25/10/2026 02:56, privado, Metricool id 405462857 (uuid 2928272605170385166).
+  Metricool aceptó el MP4 desde raw.githubusercontent.com pese al content-type genérico.
+- YouTube: título "Resumen Yu-Gi-Oh! | DD al DD mes #shorts", categoría GAMING, tags yugioh/yugioh tcg/yugioh español + tema.
 
 ## Contenido
 - Cobertura: juego de cartas Yu-Gi-Oh! (TCG, OCG, Master Duel, Duel Links). Anime solo si afecta al juego de cartas.

@@ -22,6 +22,13 @@
 - Aprobación: "sí" explícito en el chat. Si llega después de las 19:00 → publicar 15 min después. Sin respuesta al lunes 12:00 → se salta la semana.
 - Procedimiento detallado: RUNBOOK.md.
 
+## YouTube Shorts (acordado 25/10/2026)
+- Canal conectado en Metricool (UCBPpcx4ytiA_Ao50i-tEndA).
+- Mismas láminas convertidas a video vertical (~30 s: portada 4 s, noticias 6 s c/u, fuentes 4 s, fundido 0,5 s).
+- madeForKids = false (contenido NO dirigido a niños; no implica restricción 18+).
+- Sin audio por ahora. Si Bruno entrega un MP3 con licencia, se incrusta en el video.
+- Una sola aprobación cubre TikTok + YouTube.
+
 ## Contenido
 - Cobertura: juego de cartas Yu-Gi-Oh! (TCG, OCG, Master Duel, Duel Links). Anime solo si afecta al juego de cartas.
 - Cada noticia lleva etiqueta de región: TCG (cian #2EF2FF), OCG (rosa #FF3EA5), MD (lima #C6FF3D).

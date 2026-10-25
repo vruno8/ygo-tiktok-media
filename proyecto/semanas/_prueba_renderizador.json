@@ -1,0 +1,32 @@
+{
+  "semana": "19 al 25 oct",
+  "portada": [
+    {"tag": "TCG", "texto": "Nueva lista de prohibidas: 34 cartas fuera"},
+    {"tag": "TCG", "texto": "El Mundial 2027 abre doble división"},
+    {"tag": "OCG", "texto": "Immortal Phoenix sale en Japón el 31/10"},
+    {"tag": "TCG", "texto": "Reimpresión de un set clásico", "rumor": true}
+  ],
+  "noticias": [
+    {"tag": "TCG", "letrero": "禁止", "letrero_color": "#FF3EA5", "categoria": "Lista de prohibidas",
+     "titulo": "34 cartas prohibidas en la nueva lista",
+     "filas": [["Vigente desde", "19 de octubre"], ["Prohibidas", "34 (24 nuevas y 10 que estaban limitadas)"],
+               ["Limitadas", "8, más 1 semilimitada"], ["Las más sonadas", "Called by the Grave, Trishula y Red-Eyes Dark Dragoon"]],
+     "pregunta": "¿Tu deck sobrevivió?", "fuente": "Fuente: lista oficial Konami TCG, 19/10"},
+    {"tag": "TCG", "letrero": "世界", "letrero_color": "#C6FF3D", "categoria": "Mundial 2027",
+     "titulo": "El Mundial 2027 abre doble división",
+     "filas": [["Dónde", "Singapur"], ["Qué cambia", "Clasificados TCG pueden sumar una división digital"],
+               ["Opciones", "Master Duel o Duel Links (Speed o Rush)"], ["Por qué importa", "Es la primera vez que se permite"]],
+     "pregunta": "¿Jugarías las dos?", "fuente": "Fuente: anuncio Konami WCS, 23/10"},
+    {"tag": "OCG", "letrero": "新弾", "letrero_color": "#2EF2FF", "categoria": "Producto",
+     "titulo": "Immortal Phoenix sale en Japón el 31/10",
+     "filas": [["Dónde", "Solo OCG (Japón) por ahora"], ["Formato", "Sobres de 5 cartas, cajas de 30"],
+               ["Esta semana", "Soporte para Umbral Horror, Ashtra y Dark Time Wizard"], ["¿Llega al TCG?", "Sin fecha anunciada"]],
+     "pregunta": "¿Cuál quieres en TCG?", "fuente": "Fuente: anuncio Konami OCG"},
+    {"tag": "TCG", "rumor": true, "titulo": "PRUEBA: reimpresión de un set clásico",
+     "filas": [["Qué se dice", "Volvería a la venta a inicios de 2027"], ["Origen", "Filtración de una tienda"],
+               ["Estado", "Sin confirmar por Konami"]],
+     "pregunta": "¿Crees que se confirma?", "fuente": "Fuente: [sitio no oficial]"}
+  ],
+  "fuentes": [["Lista de prohibidas TCG", "yugioh-card.com · 19/10"], ["Mundial 2027", "Konami WCS vía YGOrganization · 23/10"],
+              ["Immortal Phoenix", "Konami OCG vía Yu-Gi-Oh! Meta"], ["Rumor de prueba", "[sitio no oficial]"]]
+}

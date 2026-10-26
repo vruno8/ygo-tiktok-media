@@ -81,6 +81,15 @@ def main(json_path, out_dir, modo="video"):
             pg.goto(h.as_uri()); pg.evaluate("document.fonts.ready"); pg.wait_for_timeout(700)
             png = tmp / f"lamina_{i}.png"; pg.screenshot(path=str(png))
             jpg = out / f"lamina_{i}.jpg"; Image.open(png).convert("RGB").save(jpg, quality=88); files.append(png)
+            if modo == "video":
+                # estándar v3: zonas de neón + versión "apagada" para el parpadeo (make_video.py las usa)
+                cajas = pg.evaluate("""[...document.querySelectorAll('.sign,.big,.jp')].map(e=>{const r=e.getBoundingClientRect();
+                    const m=34, x=Math.max(0,Math.floor(r.left-m)), y=Math.max(0,Math.floor(r.top-m));
+                    return {x, y, w:Math.min(1080,Math.ceil(r.right+m))-x, h:Math.min(1920,Math.ceil(r.bottom+m))-y}})""")
+                pg.add_style_tag(content=".sign,.big,.jp{opacity:.2 !important;text-shadow:none !important;box-shadow:none !important;filter:saturate(.35) brightness(.7)}")
+                pg.wait_for_timeout(150)
+                pg.screenshot(path=str(out / f"lamina_{i}_off.png"))
+                json.dump(cajas, open(out / f"lamina_{i}_neon.json", "w"))
         b.close()
     ims = [Image.open(f) for f in files]; gap, cols = 30, 3
     rows = (len(ims) + cols - 1) // cols

@@ -1,6 +1,7 @@
 {
-  "orden": ["04", "06", "14"],
-  "proxima": "14",
+  "orden": ["04", "06"],
+  "excluidas": {"14": "Interlude: excluida por Bruno el 26/10/2026 (el bucle es muy notorio y pierde ritmo)"},
+  "proxima": "04",
   "historial": [
     {"fecha": "2026-10-26", "post": "Especial YCS Houston 2026 (TikTok + YouTube)", "pista": "06"}
   ]

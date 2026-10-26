@@ -35,7 +35,8 @@
 ## Formato video para ambas redes (instrucción de Bruno, 25/10/2026 23:18)
 - TikTok y YouTube reciben el MISMO video vertical 1080×1920 (reemplaza el carrusel de TikTok).
 - 10 s por lámina, fundido 0,5 s. Portada dice "Sigue mirando ▸▸". 6 láminas = 60 s.
-- Música en rotación semanal 04 Passionate Duelist → 06 Carefree After School → 14 Interlude (estado en musica/rotacion.json).
+- Música en rotación: 04 Passionate Duelist → 06 Carefree After School (estado en musica/rotacion.json).
+  14 Interlude EXCLUIDA por Bruno el 26/10/2026: el bucle es muy notorio y pierde ritmo. Próxima: 04.
   Copyright: Bruno declara tenerlo resuelto.
 - Audio: se recorta el silencio inicial (~1,1 s), nivelado a -14 LUFS, fundido de salida 2,5 s.
 - Interlude (23 s, 3 frases con pausas): se unen las frases sin pausas y se repite en bucle con transición de 1 s.
@@ -50,13 +51,14 @@
   YouTube id 406179788 (uuid 2839759467113367336) · TikTok id 406179805 (uuid 7518058148912844050). Música: 06.
 - La rotación de música avanza con CADA publicación (semanal o especial).
 
-## Mejoras visuales v3 — EN PRUEBA (26/10/2026, pendiente de aprobación de Bruno)
+## Mejoras visuales v3 — APROBADAS por Bruno (26/10/2026 20:28), estándar para semanales y especiales
 - Neones de títulos (letreros, posición, etiquetas) parpadean en bucle irregular, tipo "mal estado".
 - Listas ordenadas Monstruos → Mágicas → Trampas con subtítulo por grupo; Extra por Fusión → Sincronía → Xyz → Link.
 - Estado de cartas con emojis: 🚫 prohibida · 1️⃣ limitada · 2️⃣ semilimitada (lista vigente, vía API YGOPRODeck).
 - Música al 50% de volumen (≈ -20 LUFS) con entrada suave de 1,5 s.
 - Listas de más de 50 cartas distintas pasan a 4 columnas; nombres largos ocupan 2 celdas.
-- Prueba: Regional WCQ Santiago 2026 (17/10, 128 jugadores). Solo 6 de 8 listas publicadas. NO programado en Metricool.
+- El parpadeo también se aplica al resumen semanal (render_semana.py en modo video).
+- Prueba: Regional WCQ Santiago 2026 (17/10, 128 jugadores). Solo 6 de 8 listas publicadas. Regenerado con 06. NO programado en Metricool.
 
 ## Contador del límite del plan Free de Metricool (pedido por Bruno 26/10/2026)
 - Regla oficial (help.metricool.com, "Main differences between Free and paid plans"):

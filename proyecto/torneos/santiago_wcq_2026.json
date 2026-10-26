@@ -1,0 +1,2652 @@
+{
+ "fuente": "https://ygoprodeck.com/tournament/santiago-wcq-regional-5187",
+ "titulo": "Santiago WCQ Regional - Yu-Gi-Oh! Tournament - YGOPRODeck",
+ "listas": [
+  {
+   "url": "https://ygoprodeck.com/deck/dark-magician-light-and-darkness-ritual-739201",
+   "deck": "Dark Magician Light and Darkness Ritual",
+   "jugador": "Fabian Perez Romero",
+   "posicion": "Winner",
+   "main": {
+    "declarado": 44,
+    "cartas": [
+     {
+      "id": "70405001",
+      "nombre": "Black Luster Soldier - Soldier of Light and Darkness",
+      "tipo": "Ritual Effect Monster",
+      "copias": 1,
+      "arquetipo": "Light and Darkness Ritual",
+      "estado_actual": null
+     },
+     {
+      "id": "44001993",
+      "nombre": "Magician of Dark Chaos - Black Chaos",
+      "tipo": "Ritual Effect Monster",
+      "copias": 1,
+      "arquetipo": "Light and Darkness Ritual",
+      "estado_actual": null
+     },
+     {
+      "id": "12266229",
+      "nombre": "Illusion of Chaos",
+      "tipo": "Ritual Effect Monster",
+      "copias": 2,
+      "arquetipo": "Chaos",
+      "estado_actual": null
+     },
+     {
+      "id": "46986414",
+      "nombre": "Dark Magician",
+      "tipo": "Normal Monster",
+      "copias": 1,
+      "arquetipo": "Dark Magician",
+      "estado_actual": null
+     },
+     {
+      "id": "88570003",
+      "nombre": "Dark Magician, the Pharaoh's Servant",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Dark Magician",
+      "estado_actual": null
+     },
+     {
+      "id": "98684220",
+      "nombre": "Black Chaos",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Light and Darkness Ritual",
+      "estado_actual": null
+     },
+     {
+      "id": "24088928",
+      "nombre": "Skull Archfiend of Chaos",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Light and Darkness Ritual",
+      "estado_actual": null
+     },
+     {
+      "id": "97462632",
+      "nombre": "Griffoh",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Light and Darkness Ritual",
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "14965712",
+      "nombre": "Kuriboh - Multiply!",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": "Kuriboh",
+      "estado_actual": null
+     },
+     {
+      "id": "7084129",
+      "nombre": "Magician's Rod",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Dark Magician",
+      "estado_actual": null
+     },
+     {
+      "id": "97631303",
+      "nombre": "Magicians' Souls",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Dark Magician",
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "42141493",
+      "nombre": "Mulcharmy Fuwalos",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Mulcharmy",
+      "estado_actual": null
+     },
+     {
+      "id": "14558128",
+      "nombre": "Ash Blossom & Joyous Spring",
+      "tipo": "Tuner Effect Monster",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "59438930",
+      "nombre": "Ghost Ogre & Snow Rabbit",
+      "tipo": "Tuner Effect Monster",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "94145021",
+      "nombre": "Droll & Lock Bird",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": null,
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "33599853",
+      "nombre": "Light and Darkness Ritual",
+      "tipo": "Ritual Spell",
+      "copias": 1,
+      "arquetipo": "Light and Darkness Ritual",
+      "estado_actual": null
+     },
+     {
+      "id": "77456448",
+      "nombre": "Spell Shattering Sword",
+      "tipo": "Quick-Play Spell",
+      "copias": 1,
+      "arquetipo": "Light and Darkness Ritual",
+      "estado_actual": null
+     },
+     {
+      "id": "22283204",
+      "nombre": "The Gaze of Timaeus",
+      "tipo": "Quick-Play Spell",
+      "copias": 1,
+      "arquetipo": "Timaeus",
+      "estado_actual": null
+     },
+     {
+      "id": "41350417",
+      "nombre": "Dark Magical Curtain",
+      "tipo": "Quick-Play Spell",
+      "copias": 3,
+      "arquetipo": "Prophecy",
+      "estado_actual": null
+     },
+     {
+      "id": "24461358",
+      "nombre": "Ragged Records of Rites",
+      "tipo": "Normal Spell",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "30271097",
+      "nombre": "The Fallen & The Virtuous",
+      "tipo": "Quick-Play Spell",
+      "copias": 1,
+      "arquetipo": "Branded",
+      "estado_actual": null
+     },
+     {
+      "id": "40366667",
+      "nombre": "Dominus Impulse",
+      "tipo": "Normal Trap",
+      "copias": 3,
+      "arquetipo": "Dominus",
+      "estado_actual": null
+     },
+     {
+      "id": "24749710",
+      "nombre": "Mind Shuffle",
+      "tipo": "Continuous Trap",
+      "copias": 1,
+      "arquetipo": "Light and Darkness Ritual",
+      "estado_actual": null
+     }
+    ]
+   },
+   "extra": {
+    "declarado": 15,
+    "cartas": [
+     {
+      "id": "78397661",
+      "nombre": "Ecclesia and the Dark Dragon",
+      "tipo": "Synchro Effect Monster",
+      "copias": 1,
+      "arquetipo": "Ecclesia",
+      "estado_actual": null
+     },
+     {
+      "id": "87746184",
+      "nombre": "Albion the Branded Dragon",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": "Branded",
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "59400890",
+      "nombre": "Dark Magician of Destruction",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": "Magician",
+      "estado_actual": null
+     },
+     {
+      "id": "37818794",
+      "nombre": "Red-Eyes Dark Dragoon",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": "Red-Eyes",
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "94259633",
+      "nombre": "Relinquished Anima",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": "Eyes Restrict",
+      "estado_actual": null
+     },
+     {
+      "id": "5043010",
+      "nombre": "Firewall Dragon",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "45819647",
+      "nombre": "Selene, Queen of the Master Magicians",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": "Endymion",
+      "estado_actual": null
+     },
+     {
+      "id": "37458564",
+      "nombre": "Cyberse Contract Witch",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": "Cyber",
+      "estado_actual": null
+     },
+     {
+      "id": "7594154",
+      "nombre": "Zenna's Deceiving Doll Maidens",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "98127546",
+      "nombre": "Underworld Goddess of the Closed World",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "27519978",
+      "nombre": "Charmer Quartet in Bloom",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": "Charmer",
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "8264361",
+      "nombre": "Dharc the Dark Charmer, Gloomy",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": "Charmer",
+      "estado_actual": null
+     },
+     {
+      "id": "4993187",
+      "nombre": "W:P Fancy Ball",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": "P",
+      "estado_actual": null
+     },
+     {
+      "id": "29301450",
+      "nombre": "S:P Little Knight",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "50277355",
+      "nombre": "Cross-Sheep",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Forbidden"
+     }
+    ]
+   },
+   "side": {
+    "declarado": 15,
+    "cartas": [
+     {
+      "id": "24088928",
+      "nombre": "Skull Archfiend of Chaos",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Light and Darkness Ritual",
+      "estado_actual": null
+     },
+     {
+      "id": "24203749",
+      "nombre": "The Great Gallant Bandit",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "14965712",
+      "nombre": "Kuriboh - Multiply!",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Kuriboh",
+      "estado_actual": null
+     },
+     {
+      "id": "84192580",
+      "nombre": "Mulcharmy Purulia",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Mulcharmy",
+      "estado_actual": null
+     },
+     {
+      "id": "98476659",
+      "nombre": "Pot of Sloth",
+      "tipo": "Normal Spell",
+      "copias": 3,
+      "arquetipo": "Greed",
+      "estado_actual": null
+     },
+     {
+      "id": "18144507",
+      "nombre": "Harpie's Feather Duster",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": "Harpie",
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "30271097",
+      "nombre": "The Fallen & The Virtuous",
+      "tipo": "Quick-Play Spell",
+      "copias": 1,
+      "arquetipo": "Branded",
+      "estado_actual": null
+     },
+     {
+      "id": "81439174",
+      "nombre": "Foolish Burial",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "24224830",
+      "nombre": "Called by the Grave",
+      "tipo": "Quick-Play Spell",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "24749710",
+      "nombre": "Mind Shuffle",
+      "tipo": "Continuous Trap",
+      "copias": 1,
+      "arquetipo": "Light and Darkness Ritual",
+      "estado_actual": null
+     }
+    ]
+   },
+   "pais": "Chile",
+   "arquetipo_pagina": "Light and Darkness Ritual",
+   "top8": true,
+   "afectadas": [
+    {
+     "nombre": "Griffoh",
+     "seccion": "main",
+     "copias": 3,
+     "estado_api": "Limited",
+     "cambio_19_10": "Limited",
+     "coincide": true
+    },
+    {
+     "nombre": "Magicians' Souls",
+     "seccion": "main",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Droll & Lock Bird",
+     "seccion": "main",
+     "copias": 2,
+     "estado_api": "Limited",
+     "cambio_19_10": "Limited",
+     "coincide": true
+    },
+    {
+     "nombre": "Albion the Branded Dragon",
+     "seccion": "extra",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Red-Eyes Dark Dragoon",
+     "seccion": "extra",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Zenna's Deceiving Doll Maidens",
+     "seccion": "extra",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Charmer Quartet in Bloom",
+     "seccion": "extra",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Cross-Sheep",
+     "seccion": "extra",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Called by the Grave",
+     "seccion": "side",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    }
+   ]
+  },
+  {
+   "url": "https://ygoprodeck.com/deck/ars-magna-elfnote-739728",
+   "deck": "Ars Magna Elfnote",
+   "jugador": "Elias Pacheco",
+   "posicion": "Runner-Up",
+   "main": {
+    "declarado": 40,
+    "cartas": [
+     {
+      "id": "13597785",
+      "nombre": "Elfnote Lucina",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Elfnote",
+      "estado_actual": null
+     },
+     {
+      "id": "56651978",
+      "nombre": "Elfnote Regina",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Elfnote",
+      "estado_actual": null
+     },
+     {
+      "id": "59581480",
+      "nombre": "Elfnote Tinia",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Elfnote",
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "85976588",
+      "nombre": "Elfnote Fortuna",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Elfnote",
+      "estado_actual": null
+     },
+     {
+      "id": "12375297",
+      "nombre": "Elfnote Power Patron",
+      "tipo": "Tuner Effect Monster",
+      "copias": 2,
+      "arquetipo": "Elfnote",
+      "estado_actual": null
+     },
+     {
+      "id": "97556336",
+      "nombre": "Medius the Pure",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": "Medius",
+      "estado_actual": null
+     },
+     {
+      "id": "90875418",
+      "nombre": "Theorealized Medius",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Medius",
+      "estado_actual": null
+     },
+     {
+      "id": "36270527",
+      "nombre": "Ars Magna the Finite and the Infinite",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": "Ars Magna",
+      "estado_actual": null
+     },
+     {
+      "id": "99753860",
+      "nombre": "Ars Magna the Division and the Union",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Ars Magna",
+      "estado_actual": null
+     },
+     {
+      "id": "62368221",
+      "nombre": "Ars Magna the Corruption and the Purification",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Ars Magna",
+      "estado_actual": null
+     },
+     {
+      "id": "70488851",
+      "nombre": "Vidolium the Unstable Power Patron of Unity",
+      "tipo": "Pendulum Effect Monster",
+      "copias": 1,
+      "arquetipo": "Power Patron",
+      "estado_actual": null
+     },
+     {
+      "id": "10266279",
+      "nombre": "Junoldo the Shadespirit Power Patron",
+      "tipo": "Pendulum Effect Monster",
+      "copias": 1,
+      "arquetipo": "Elfnote",
+      "estado_actual": null
+     },
+     {
+      "id": "42141493",
+      "nombre": "Mulcharmy Fuwalos",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Mulcharmy",
+      "estado_actual": null
+     },
+     {
+      "id": "27204311",
+      "nombre": "Nibiru, the Primal Being",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "14558128",
+      "nombre": "Ash Blossom & Joyous Spring",
+      "tipo": "Tuner Effect Monster",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "59438930",
+      "nombre": "Ghost Ogre & Snow Rabbit",
+      "tipo": "Tuner Effect Monster",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "94145021",
+      "nombre": "Droll & Lock Bird",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": null,
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "97268402",
+      "nombre": "Effect Veiler",
+      "tipo": "Tuner Effect Monster",
+      "copias": 2,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "64491754",
+      "nombre": "Elfnotes: Welcome Home",
+      "tipo": "Continuous Spell",
+      "copias": 1,
+      "arquetipo": "Elfnote",
+      "estado_actual": null
+     },
+     {
+      "id": "48739627",
+      "nombre": "Theorealize",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "36709484",
+      "nombre": "Theorealize Past Lull",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": "Theorealize",
+      "estado_actual": null
+     },
+     {
+      "id": "37279096",
+      "nombre": "Ars Magna \"Citrinitas\"",
+      "tipo": "Continuous Spell",
+      "copias": 1,
+      "arquetipo": "Ars Magna",
+      "estado_actual": null
+     },
+     {
+      "id": "25661743",
+      "nombre": "Prohibited Power Patron Portal - Terminus",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": "Power Patron",
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "24092792",
+      "nombre": "Elfnotes: Rhapsodia of Madness",
+      "tipo": "Continuous Trap",
+      "copias": 1,
+      "arquetipo": "Elfnote",
+      "estado_actual": null
+     }
+    ]
+   },
+   "extra": {
+    "declarado": 15,
+    "cartas": [
+     {
+      "id": "5559570",
+      "nombre": "Elfnote June Pride",
+      "tipo": "Synchro Effect Monster",
+      "copias": 1,
+      "arquetipo": "Elfnote",
+      "estado_actual": null
+     },
+     {
+      "id": "42302563",
+      "nombre": "Elfnote Seraphim Strelitzia",
+      "tipo": "Synchro Effect Monster",
+      "copias": 1,
+      "arquetipo": "Elfnote",
+      "estado_actual": null
+     },
+     {
+      "id": "50954680",
+      "nombre": "Crystal Wing Synchro Dragon",
+      "tipo": "Synchro Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "60465049",
+      "nombre": "Psychic End Punisher",
+      "tipo": "Synchro Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "87188910",
+      "nombre": "Ravenous Crocodragon Archethys",
+      "tipo": "Synchro Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "37706769",
+      "nombre": "The Executor of the Underworld - Pluto",
+      "tipo": "Synchro Tuner Effect Monster",
+      "copias": 1,
+      "arquetipo": "The Agent",
+      "estado_actual": null
+     },
+     {
+      "id": "5914858",
+      "nombre": "Junora the Power Patron of Tuning",
+      "tipo": "Synchro Effect Monster",
+      "copias": 1,
+      "arquetipo": "Power Patron",
+      "estado_actual": null
+     },
+     {
+      "id": "66122213",
+      "nombre": "Infernal Strike Fighter",
+      "tipo": "Synchro Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "33158448",
+      "nombre": "F.A. Dawn Dragster",
+      "tipo": "Synchro Effect Monster",
+      "copias": 1,
+      "arquetipo": "F.A.",
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "8165596",
+      "nombre": "Number 90: Galaxy-Eyes Photon Lord",
+      "tipo": "Xyz Effect Monster",
+      "copias": 1,
+      "arquetipo": "Galaxy-Eyes",
+      "estado_actual": null
+     },
+     {
+      "id": "27184601",
+      "nombre": "Artmage Diactorus",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": "Artmage",
+      "estado_actual": null
+     },
+     {
+      "id": "31822037",
+      "nombre": "Purification Power Patron",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": "Power Patron",
+      "estado_actual": null
+     },
+     {
+      "id": "4063756",
+      "nombre": "Mediclius the Extraordinary Power Patron",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": "Power Patron",
+      "estado_actual": null
+     },
+     {
+      "id": "29301450",
+      "nombre": "S:P Little Knight",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "98978921",
+      "nombre": "Link Spider",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     }
+    ]
+   },
+   "side": {
+    "declarado": 15,
+    "cartas": [
+     {
+      "id": "70488851",
+      "nombre": "Vidolium the Unstable Power Patron of Unity",
+      "tipo": "Pendulum Effect Monster",
+      "copias": 1,
+      "arquetipo": "Power Patron",
+      "estado_actual": null
+     },
+     {
+      "id": "12375297",
+      "nombre": "Elfnote Power Patron",
+      "tipo": "Tuner Effect Monster",
+      "copias": 1,
+      "arquetipo": "Elfnote",
+      "estado_actual": null
+     },
+     {
+      "id": "24203749",
+      "nombre": "The Great Gallant Bandit",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "84192580",
+      "nombre": "Mulcharmy Purulia",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": "Mulcharmy",
+      "estado_actual": null
+     },
+     {
+      "id": "73642296",
+      "nombre": "Ghost Belle & Haunted Mansion",
+      "tipo": "Tuner Effect Monster",
+      "copias": 2,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "24224830",
+      "nombre": "Called by the Grave",
+      "tipo": "Quick-Play Spell",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "14883228",
+      "nombre": "Typhoon",
+      "tipo": "Normal Trap",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "41420027",
+      "nombre": "Solemn Judgment",
+      "tipo": "Counter Trap",
+      "copias": 1,
+      "arquetipo": "Solemn",
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "90728287",
+      "nombre": "Ars Magna \"Philosophorum\"",
+      "tipo": "Normal Trap",
+      "copias": 1,
+      "arquetipo": "Ars Magna",
+      "estado_actual": null
+     }
+    ]
+   },
+   "pais": "Chile",
+   "arquetipo_pagina": "Elfnote",
+   "top8": true,
+   "afectadas": [
+    {
+     "nombre": "Elfnote Tinia",
+     "seccion": "main",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Droll & Lock Bird",
+     "seccion": "main",
+     "copias": 2,
+     "estado_api": "Limited",
+     "cambio_19_10": "Limited",
+     "coincide": true
+    },
+    {
+     "nombre": "Crystal Wing Synchro Dragon",
+     "seccion": "extra",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "F.A. Dawn Dragster",
+     "seccion": "extra",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Called by the Grave",
+     "seccion": "side",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    }
+   ]
+  },
+  {
+   "url": "https://ygoprodeck.com/deck/azamina-mitsurugi-dark-magician-light-and-darkness-ritual-739734",
+   "deck": "Azamina Mitsurugi Dark Magician Light and Darkness Ritual",
+   "jugador": "Diego Antonio Morales Ibaceta",
+   "posicion": "Top 4",
+   "main": {
+    "declarado": 60,
+    "cartas": [
+     {
+      "id": "44001993",
+      "nombre": "Magician of Dark Chaos - Black Chaos",
+      "tipo": "Ritual Effect Monster",
+      "copias": 1,
+      "arquetipo": "Light and Darkness Ritual",
+      "estado_actual": null
+     },
+     {
+      "id": "12266229",
+      "nombre": "Illusion of Chaos",
+      "tipo": "Ritual Effect Monster",
+      "copias": 1,
+      "arquetipo": "Chaos",
+      "estado_actual": null
+     },
+     {
+      "id": "46986414",
+      "nombre": "Dark Magician",
+      "tipo": "Normal Monster",
+      "copias": 1,
+      "arquetipo": "Dark Magician",
+      "estado_actual": null
+     },
+     {
+      "id": "98684220",
+      "nombre": "Black Chaos",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": "Light and Darkness Ritual",
+      "estado_actual": null
+     },
+     {
+      "id": "24088928",
+      "nombre": "Skull Archfiend of Chaos",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Light and Darkness Ritual",
+      "estado_actual": null
+     },
+     {
+      "id": "97462632",
+      "nombre": "Griffoh",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Light and Darkness Ritual",
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "7084129",
+      "nombre": "Magician's Rod",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Dark Magician",
+      "estado_actual": null
+     },
+     {
+      "id": "97631303",
+      "nombre": "Magicians' Souls",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Dark Magician",
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "72270339",
+      "nombre": "Diabellstar the Black Witch",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Diabellstar",
+      "estado_actual": null
+     },
+     {
+      "id": "40543231",
+      "nombre": "Mitsurugi no Mikoto, Aramasa",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Mitsurugi",
+      "estado_actual": null
+     },
+     {
+      "id": "18176525",
+      "nombre": "Mitsurugi no Mikoto, Saji",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Mitsurugi",
+      "estado_actual": null
+     },
+     {
+      "id": "19899073",
+      "nombre": "Ame no Murakumo no Mitsurugi",
+      "tipo": "Ritual Effect Monster",
+      "copias": 1,
+      "arquetipo": "Mitsurugi",
+      "estado_actual": null
+     },
+     {
+      "id": "13332685",
+      "nombre": "Ame no Habakiri no Mitsurugi",
+      "tipo": "Ritual Effect Monster",
+      "copias": 1,
+      "arquetipo": "Mitsurugi",
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "24203749",
+      "nombre": "The Great Gallant Bandit",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "42141493",
+      "nombre": "Mulcharmy Fuwalos",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Mulcharmy",
+      "estado_actual": null
+     },
+     {
+      "id": "27204311",
+      "nombre": "Nibiru, the Primal Being",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "14558128",
+      "nombre": "Ash Blossom & Joyous Spring",
+      "tipo": "Tuner Effect Monster",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "59438930",
+      "nombre": "Ghost Ogre & Snow Rabbit",
+      "tipo": "Tuner Effect Monster",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "94145021",
+      "nombre": "Droll & Lock Bird",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": null,
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "33599853",
+      "nombre": "Light and Darkness Ritual",
+      "tipo": "Ritual Spell",
+      "copias": 1,
+      "arquetipo": "Light and Darkness Ritual",
+      "estado_actual": null
+     },
+     {
+      "id": "41350417",
+      "nombre": "Dark Magical Curtain",
+      "tipo": "Quick-Play Spell",
+      "copias": 3,
+      "arquetipo": "Prophecy",
+      "estado_actual": null
+     },
+     {
+      "id": "22283204",
+      "nombre": "The Gaze of Timaeus",
+      "tipo": "Quick-Play Spell",
+      "copias": 1,
+      "arquetipo": "Timaeus",
+      "estado_actual": null
+     },
+     {
+      "id": "94845588",
+      "nombre": "The Hallowed Azamina",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": "Azamina",
+      "estado_actual": null
+     },
+     {
+      "id": "66328392",
+      "nombre": "Deception of the Sinful Spoils",
+      "tipo": "Continuous Spell",
+      "copias": 1,
+      "arquetipo": "Sinful Spoils",
+      "estado_actual": null
+     },
+     {
+      "id": "80845034",
+      "nombre": "WANTED: Seeker of Sinful Spoils",
+      "tipo": "Quick-Play Spell",
+      "copias": 3,
+      "arquetipo": "Sinful Spoils",
+      "estado_actual": null
+     },
+     {
+      "id": "45171524",
+      "nombre": "Mitsurugi Prayers",
+      "tipo": "Quick-Play Spell",
+      "copias": 3,
+      "arquetipo": "Mitsurugi",
+      "estado_actual": null
+     },
+     {
+      "id": "81560239",
+      "nombre": "Mitsurugi Ritual",
+      "tipo": "Ritual Spell",
+      "copias": 1,
+      "arquetipo": "Mitsurugi",
+      "estado_actual": null
+     },
+     {
+      "id": "49721684",
+      "nombre": "Mitsurugi Mirror",
+      "tipo": "Ritual Spell",
+      "copias": 1,
+      "arquetipo": "Mitsurugi",
+      "estado_actual": null
+     },
+     {
+      "id": "24461358",
+      "nombre": "Ragged Records of Rites",
+      "tipo": "Normal Spell",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "40366667",
+      "nombre": "Dominus Impulse",
+      "tipo": "Normal Trap",
+      "copias": 3,
+      "arquetipo": "Dominus",
+      "estado_actual": null
+     },
+     {
+      "id": "6325660",
+      "nombre": "Dominus Spark",
+      "tipo": "Normal Trap",
+      "copias": 3,
+      "arquetipo": "Dominus",
+      "estado_actual": null
+     },
+     {
+      "id": "24749710",
+      "nombre": "Mind Shuffle",
+      "tipo": "Continuous Trap",
+      "copias": 1,
+      "arquetipo": "Light and Darkness Ritual",
+      "estado_actual": null
+     }
+    ]
+   },
+   "extra": {
+    "declarado": 15,
+    "cartas": [
+     {
+      "id": "59400890",
+      "nombre": "Dark Magician of Destruction",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": "Magician",
+      "estado_actual": null
+     },
+     {
+      "id": "37818794",
+      "nombre": "Red-Eyes Dark Dragoon",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": "Red-Eyes",
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "73391962",
+      "nombre": "Azamina Mu Rcielago",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": "Azamina",
+      "estado_actual": null
+     },
+     {
+      "id": "46396218",
+      "nombre": "Azamina Ilia Silvia",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": "Azamina",
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "94259633",
+      "nombre": "Relinquished Anima",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": "Eyes Restrict",
+      "estado_actual": null
+     },
+     {
+      "id": "86066372",
+      "nombre": "Accesscode Talker",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": "Code Talker",
+      "estado_actual": null
+     },
+     {
+      "id": "45819647",
+      "nombre": "Selene, Queen of the Master Magicians",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": "Endymion",
+      "estado_actual": null
+     },
+     {
+      "id": "37458564",
+      "nombre": "Cyberse Contract Witch",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": "Cyber",
+      "estado_actual": null
+     },
+     {
+      "id": "7594154",
+      "nombre": "Zenna's Deceiving Doll Maidens",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "27519978",
+      "nombre": "Charmer Quartet in Bloom",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": "Charmer",
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "8264361",
+      "nombre": "Dharc the Dark Charmer, Gloomy",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": "Charmer",
+      "estado_actual": null
+     },
+     {
+      "id": "4993187",
+      "nombre": "W:P Fancy Ball",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": "P",
+      "estado_actual": null
+     },
+     {
+      "id": "65741786",
+      "nombre": "I:P Masquerena",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "29301450",
+      "nombre": "S:P Little Knight",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "50277355",
+      "nombre": "Cross-Sheep",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Forbidden"
+     }
+    ]
+   },
+   "side": {
+    "declarado": 15,
+    "cartas": [
+     {
+      "id": "70405001",
+      "nombre": "Black Luster Soldier - Soldier of Light and Darkness",
+      "tipo": "Ritual Effect Monster",
+      "copias": 1,
+      "arquetipo": "Light and Darkness Ritual",
+      "estado_actual": null
+     },
+     {
+      "id": "55397172",
+      "nombre": "Futsu no Mitama no Mitsurugi",
+      "tipo": "Ritual Effect Monster",
+      "copias": 1,
+      "arquetipo": "Mitsurugi",
+      "estado_actual": null
+     },
+     {
+      "id": "82782870",
+      "nombre": "Mitsurugi no Mikoto, Kusanagi",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Mitsurugi",
+      "estado_actual": null
+     },
+     {
+      "id": "20934683",
+      "nombre": "Azamina Debtors",
+      "tipo": "Quick-Play Spell",
+      "copias": 1,
+      "arquetipo": "Azamina",
+      "estado_actual": null
+     },
+     {
+      "id": "2729965",
+      "nombre": "Hey, Space Trunade!",
+      "tipo": "Normal Spell",
+      "copias": 2,
+      "arquetipo": "Cyclone",
+      "estado_actual": null
+     },
+     {
+      "id": "98476659",
+      "nombre": "Pot of Sloth",
+      "tipo": "Normal Spell",
+      "copias": 3,
+      "arquetipo": "Greed",
+      "estado_actual": null
+     },
+     {
+      "id": "25311006",
+      "nombre": "Triple Tactics Talent",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "24224830",
+      "nombre": "Called by the Grave",
+      "tipo": "Quick-Play Spell",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "14883228",
+      "nombre": "Typhoon",
+      "tipo": "Normal Trap",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "17954937",
+      "nombre": "Mitsurugi Great Purification",
+      "tipo": "Normal Trap",
+      "copias": 1,
+      "arquetipo": "Mitsurugi",
+      "estado_actual": null
+     }
+    ]
+   },
+   "pais": "Chile",
+   "arquetipo_pagina": "Light and Darkness Ritual",
+   "top8": true,
+   "afectadas": [
+    {
+     "nombre": "Griffoh",
+     "seccion": "main",
+     "copias": 3,
+     "estado_api": "Limited",
+     "cambio_19_10": "Limited",
+     "coincide": true
+    },
+    {
+     "nombre": "Magicians' Souls",
+     "seccion": "main",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Ame no Habakiri no Mitsurugi",
+     "seccion": "main",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Droll & Lock Bird",
+     "seccion": "main",
+     "copias": 2,
+     "estado_api": "Limited",
+     "cambio_19_10": "Limited",
+     "coincide": true
+    },
+    {
+     "nombre": "Red-Eyes Dark Dragoon",
+     "seccion": "extra",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Azamina Ilia Silvia",
+     "seccion": "extra",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Zenna's Deceiving Doll Maidens",
+     "seccion": "extra",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Charmer Quartet in Bloom",
+     "seccion": "extra",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Cross-Sheep",
+     "seccion": "extra",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Triple Tactics Talent",
+     "seccion": "side",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Called by the Grave",
+     "seccion": "side",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    }
+   ]
+  },
+  {
+   "url": "https://ygoprodeck.com/deck/despia-branded-739729",
+   "deck": "Despia Branded",
+   "jugador": "Mauricio Andre Caceres",
+   "posicion": "Top 8",
+   "main": {
+    "declarado": 40,
+    "cartas": [
+     {
+      "id": "62962630",
+      "nombre": "Aluber the Jester of Despia",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": "Despia",
+      "estado_actual": null
+     },
+     {
+      "id": "25451383",
+      "nombre": "Albion the Shrouded Dragon",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "73819701",
+      "nombre": "Fallen of the White Dragon",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "68468459",
+      "nombre": "Fallen of Albaz",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Dogmatika",
+      "estado_actual": null
+     },
+     {
+      "id": "95515789",
+      "nombre": "Blazing Cartesia, the Virtuous",
+      "tipo": "Tuner Effect Monster",
+      "copias": 2,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "45883110",
+      "nombre": "Guiding Quem, the Virtuous",
+      "tipo": "Tuner Effect Monster",
+      "copias": 1,
+      "arquetipo": "Despia",
+      "estado_actual": null
+     },
+     {
+      "id": "55273560",
+      "nombre": "Incredible Ecclesia, the Virtuous",
+      "tipo": "Tuner Effect Monster",
+      "copias": 2,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "60303688",
+      "nombre": "Dogmatika Ecclesia, the Virtuous",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Dogmatika",
+      "estado_actual": null
+     },
+     {
+      "id": "19304410",
+      "nombre": "Tri-Brigade Springans Kitt",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Springans",
+      "estado_actual": null
+     },
+     {
+      "id": "19096726",
+      "nombre": "Tri-Brigade Mercourier",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Tri-Brigade",
+      "estado_actual": null
+     },
+     {
+      "id": "42141493",
+      "nombre": "Mulcharmy Fuwalos",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Mulcharmy",
+      "estado_actual": null
+     },
+     {
+      "id": "84192580",
+      "nombre": "Mulcharmy Purulia",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Mulcharmy",
+      "estado_actual": null
+     },
+     {
+      "id": "94145021",
+      "nombre": "Droll & Lock Bird",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": null,
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "44362883",
+      "nombre": "Branded Fusion",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": "Branded",
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "29948294",
+      "nombre": "Branded in High Spirits",
+      "tipo": "Quick-Play Spell",
+      "copias": 2,
+      "arquetipo": "Branded",
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "36637374",
+      "nombre": "Branded Opening",
+      "tipo": "Quick-Play Spell",
+      "copias": 3,
+      "arquetipo": "Branded",
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "1984618",
+      "nombre": "Nadir Servant",
+      "tipo": "Normal Spell",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "30271097",
+      "nombre": "The Fallen & The Virtuous",
+      "tipo": "Quick-Play Spell",
+      "copias": 3,
+      "arquetipo": "Branded",
+      "estado_actual": null
+     },
+     {
+      "id": "48130397",
+      "nombre": "Super Polymerization",
+      "tipo": "Quick-Play Spell",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "25311006",
+      "nombre": "Triple Tactics Talent",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "75500286",
+      "nombre": "Gold Sarcophagus",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "17751597",
+      "nombre": "Branded Retribution",
+      "tipo": "Counter Trap",
+      "copias": 1,
+      "arquetipo": "Branded",
+      "estado_actual": null
+     }
+    ]
+   },
+   "extra": {
+    "declarado": 15,
+    "cartas": [
+     {
+      "id": "72272462",
+      "nombre": "Despian Quaeritis",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": "Despia",
+      "estado_actual": null
+     },
+     {
+      "id": "87746184",
+      "nombre": "Albion the Branded Dragon",
+      "tipo": "Fusion Effect Monster",
+      "copias": 2,
+      "arquetipo": "Branded",
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "44146295",
+      "nombre": "Mirrorjade the Iceblade Dragon",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": "Albaz Dragon",
+      "estado_actual": null
+     },
+     {
+      "id": "70534340",
+      "nombre": "Lubellion the Searing Dragon",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": "Albaz Dragon",
+      "estado_actual": null
+     },
+     {
+      "id": "3410461",
+      "nombre": "Alba-Lenatus the Abyss Dragon",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "24915933",
+      "nombre": "Granguignol the Dusk Dragon",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "41373230",
+      "nombre": "Titaniklad the Ash Dragon",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "51409648",
+      "nombre": "Rindbrumm the Striking Dragon",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": "Albaz Dragon",
+      "estado_actual": null
+     },
+     {
+      "id": "76666602",
+      "nombre": "The Dragon that Devours the Dogma",
+      "tipo": "Fusion Effect Monster",
+      "copias": 2,
+      "arquetipo": "Albaz Dragon",
+      "estado_actual": null
+     },
+     {
+      "id": "80843006",
+      "nombre": "Mixousia the Confounder",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "72578374",
+      "nombre": "Khaos Starsource Dragon",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "74405783",
+      "nombre": "The Three Champions of Swordsoul",
+      "tipo": "Synchro Effect Monster",
+      "copias": 1,
+      "arquetipo": "Swordsoul",
+      "estado_actual": null
+     },
+     {
+      "id": "78397661",
+      "nombre": "Ecclesia and the Dark Dragon",
+      "tipo": "Synchro Effect Monster",
+      "copias": 1,
+      "arquetipo": "Ecclesia",
+      "estado_actual": null
+     }
+    ]
+   },
+   "side": {
+    "declarado": 15,
+    "cartas": [
+     {
+      "id": "69680031",
+      "nombre": "Dogmatika Fleurdelis, the Knighted",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Dogmatika",
+      "estado_actual": null
+     },
+     {
+      "id": "53765052",
+      "nombre": "Diabellze the Original Sinkeeper",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "10000080",
+      "nombre": "The Winged Dragon of Ra - Sphere Mode",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Egyptian God",
+      "estado_actual": null
+     },
+     {
+      "id": "18144507",
+      "nombre": "Harpie's Feather Duster",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": "Harpie",
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "35269904",
+      "nombre": "Triple Tactics Thrust",
+      "tipo": "Normal Spell",
+      "copias": 2,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "15693423",
+      "nombre": "Evenly Matched",
+      "tipo": "Normal Trap",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "85442146",
+      "nombre": "Dragon's Mind",
+      "tipo": "Counter Trap",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "41420027",
+      "nombre": "Solemn Judgment",
+      "tipo": "Counter Trap",
+      "copias": 1,
+      "arquetipo": "Solemn",
+      "estado_actual": "Limited"
+     }
+    ]
+   },
+   "pais": "Chile",
+   "arquetipo_pagina": "Branded",
+   "top8": true,
+   "afectadas": [
+    {
+     "nombre": "Droll & Lock Bird",
+     "seccion": "main",
+     "copias": 2,
+     "estado_api": "Limited",
+     "cambio_19_10": "Limited",
+     "coincide": true
+    },
+    {
+     "nombre": "Branded in High Spirits",
+     "seccion": "main",
+     "copias": 2,
+     "estado_api": "Limited",
+     "cambio_19_10": "Limited",
+     "coincide": true
+    },
+    {
+     "nombre": "Branded Opening",
+     "seccion": "main",
+     "copias": 3,
+     "estado_api": "Limited",
+     "cambio_19_10": "Limited",
+     "coincide": true
+    },
+    {
+     "nombre": "Triple Tactics Talent",
+     "seccion": "main",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Albion the Branded Dragon",
+     "seccion": "extra",
+     "copias": 2,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    }
+   ]
+  },
+  {
+   "url": "https://ygoprodeck.com/deck/angelechy-739732",
+   "deck": "Angelechy",
+   "jugador": "Hernan Bravo",
+   "posicion": "Top 8",
+   "main": {
+    "declarado": 40,
+    "cartas": [
+     {
+      "id": "42141493",
+      "nombre": "Mulcharmy Fuwalos",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Mulcharmy",
+      "estado_actual": null
+     },
+     {
+      "id": "14558128",
+      "nombre": "Ash Blossom & Joyous Spring",
+      "tipo": "Tuner Effect Monster",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "59438930",
+      "nombre": "Ghost Ogre & Snow Rabbit",
+      "tipo": "Tuner Effect Monster",
+      "copias": 2,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "94145021",
+      "nombre": "Droll & Lock Bird",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": null,
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "17782288",
+      "nombre": "Angelechy Problem",
+      "tipo": "Field Spell",
+      "copias": 3,
+      "arquetipo": "Angelechy",
+      "estado_actual": null
+     },
+     {
+      "id": "13068112",
+      "nombre": "Angelechy Strategy Score",
+      "tipo": "Normal Spell",
+      "copias": 3,
+      "arquetipo": "Angelechy",
+      "estado_actual": null
+     },
+     {
+      "id": "86457955",
+      "nombre": "Angelechy Opposition",
+      "tipo": "Normal Spell",
+      "copias": 3,
+      "arquetipo": "Angelechy",
+      "estado_actual": null
+     },
+     {
+      "id": "12845564",
+      "nombre": "Angelechy Endgame Problem",
+      "tipo": "Field Spell",
+      "copias": 1,
+      "arquetipo": "Angelechy",
+      "estado_actual": null
+     },
+     {
+      "id": "59062857",
+      "nombre": "Angelechy Brilliant Move",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": "Angelechy",
+      "estado_actual": null
+     },
+     {
+      "id": "35726888",
+      "nombre": "Foolish Burial Goods",
+      "tipo": "Normal Spell",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "73628505",
+      "nombre": "Terraforming",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "97045737",
+      "nombre": "Dominus Purge",
+      "tipo": "Normal Trap",
+      "copias": 3,
+      "arquetipo": "Dominus",
+      "estado_actual": null
+     },
+     {
+      "id": "40366667",
+      "nombre": "Dominus Impulse",
+      "tipo": "Normal Trap",
+      "copias": 3,
+      "arquetipo": "Dominus",
+      "estado_actual": null
+     },
+     {
+      "id": "6325660",
+      "nombre": "Dominus Spark",
+      "tipo": "Normal Trap",
+      "copias": 3,
+      "arquetipo": "Dominus",
+      "estado_actual": null
+     },
+     {
+      "id": "80565021",
+      "nombre": "Angelechy Opening to e4",
+      "tipo": "Normal Trap",
+      "copias": 3,
+      "arquetipo": "Angelechy",
+      "estado_actual": null
+     },
+     {
+      "id": "54171327",
+      "nombre": "Angelechy Disturbance",
+      "tipo": "Normal Trap",
+      "copias": 1,
+      "arquetipo": "Angelechy",
+      "estado_actual": null
+     },
+     {
+      "id": "48340269",
+      "nombre": "Angelechy Verdict",
+      "tipo": "Normal Trap",
+      "copias": 2,
+      "arquetipo": "Angelechy",
+      "estado_actual": null
+     }
+    ]
+   },
+   "extra": {
+    "declarado": 15,
+    "cartas": [
+     {
+      "id": "42410161",
+      "nombre": "Angelechy Shatranga",
+      "tipo": "Synchro Effect Monster",
+      "copias": 2,
+      "arquetipo": "Angelechy",
+      "estado_actual": null
+     },
+     {
+      "id": "81797573",
+      "nombre": "Angelechy Enlisted",
+      "tipo": "Synchro Tuner Effect Monster",
+      "copias": 2,
+      "arquetipo": "Angelechy",
+      "estado_actual": null
+     },
+     {
+      "id": "50284408",
+      "nombre": "Angelechy Castellan",
+      "tipo": "Synchro Effect Monster",
+      "copias": 1,
+      "arquetipo": "Angelechy",
+      "estado_actual": null
+     },
+     {
+      "id": "86673403",
+      "nombre": "Angelechy Seneschal",
+      "tipo": "Synchro Effect Monster",
+      "copias": 1,
+      "arquetipo": "Angelechy",
+      "estado_actual": null
+     },
+     {
+      "id": "28904860",
+      "nombre": "Angelechy Bastion",
+      "tipo": "Synchro Effect Monster",
+      "copias": 2,
+      "arquetipo": "Angelechy",
+      "estado_actual": null
+     },
+     {
+      "id": "55393975",
+      "nombre": "Angelechy Destrier",
+      "tipo": "Synchro Effect Monster",
+      "copias": 2,
+      "arquetipo": "Angelechy",
+      "estado_actual": null
+     },
+     {
+      "id": "22850702",
+      "nombre": "Chaos Angel",
+      "tipo": "Synchro Effect Monster",
+      "copias": 1,
+      "arquetipo": "Chaos",
+      "estado_actual": null
+     },
+     {
+      "id": "15982593",
+      "nombre": "Centur-Ion Legatia",
+      "tipo": "Synchro Effect Monster",
+      "copias": 1,
+      "arquetipo": "Centur-Ion",
+      "estado_actual": null
+     },
+     {
+      "id": "31114334",
+      "nombre": "Assault Blackwing - Kusanagi the Gathering Storm",
+      "tipo": "Synchro Effect Monster",
+      "copias": 1,
+      "arquetipo": "Assault Blackwing",
+      "estado_actual": null
+     },
+     {
+      "id": "73218989",
+      "nombre": "Black-Winged Assault Dragon",
+      "tipo": "Synchro Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "58071334",
+      "nombre": "Snake-Eyes Doomed Dragon",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": "-Eyes Dragon",
+      "estado_actual": null
+     }
+    ]
+   },
+   "side": {
+    "declarado": 15,
+    "cartas": [
+     {
+      "id": "15397015",
+      "nombre": "Inspector Boarder",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "10000080",
+      "nombre": "The Winged Dragon of Ra - Sphere Mode",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Egyptian God",
+      "estado_actual": null
+     },
+     {
+      "id": "84192580",
+      "nombre": "Mulcharmy Purulia",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Mulcharmy",
+      "estado_actual": null
+     },
+     {
+      "id": "35269904",
+      "nombre": "Triple Tactics Thrust",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "25311006",
+      "nombre": "Triple Tactics Talent",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "24224830",
+      "nombre": "Called by the Grave",
+      "tipo": "Quick-Play Spell",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "15693423",
+      "nombre": "Evenly Matched",
+      "tipo": "Normal Trap",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     }
+    ]
+   },
+   "pais": "Chile",
+   "arquetipo_pagina": "Angelechy",
+   "top8": true,
+   "afectadas": [
+    {
+     "nombre": "Droll & Lock Bird",
+     "seccion": "main",
+     "copias": 2,
+     "estado_api": "Limited",
+     "cambio_19_10": "Limited",
+     "coincide": true
+    },
+    {
+     "nombre": "Triple Tactics Talent",
+     "seccion": "side",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Called by the Grave",
+     "seccion": "side",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    }
+   ]
+  },
+  {
+   "url": "https://ygoprodeck.com/deck/lunalight-739735",
+   "deck": "Lunalight",
+   "jugador": "Kevin Roger Riffo Pinto",
+   "posicion": "Top 8",
+   "main": {
+    "declarado": 40,
+    "cartas": [
+     {
+      "id": "8379983",
+      "nombre": "Lunalight Gold Leo",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Lunalight",
+      "estado_actual": null
+     },
+     {
+      "id": "11876803",
+      "nombre": "Lunalight Scarlet Tiger",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": "Lunalight",
+      "estado_actual": null
+     },
+     {
+      "id": "11317977",
+      "nombre": "Lunalight Black Sheep",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": "Lunalight",
+      "estado_actual": null
+     },
+     {
+      "id": "35763582",
+      "nombre": "Lunalight Silver Hound",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": "Lunalight",
+      "estado_actual": null
+     },
+     {
+      "id": "35618217",
+      "nombre": "Lunalight Kaleido Chick",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": "Lunalight",
+      "estado_actual": null
+     },
+     {
+      "id": "50546208",
+      "nombre": "Lunalight Yellow Marten",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Lunalight",
+      "estado_actual": null
+     },
+     {
+      "id": "14152693",
+      "nombre": "Lunalight Emerald Bird",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": "Lunalight",
+      "estado_actual": null
+     },
+     {
+      "id": "47705572",
+      "nombre": "Lunalight Wolf",
+      "tipo": "Pendulum Effect Monster",
+      "copias": 1,
+      "arquetipo": "Lunalight",
+      "estado_actual": null
+     },
+     {
+      "id": "83190280",
+      "nombre": "Lunalight Tiger",
+      "tipo": "Pendulum Effect Monster",
+      "copias": 1,
+      "arquetipo": "Lunalight",
+      "estado_actual": null
+     },
+     {
+      "id": "87209160",
+      "nombre": "Tri-Brigade Fraktall",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Tri-Brigade",
+      "estado_actual": null
+     },
+     {
+      "id": "42141493",
+      "nombre": "Mulcharmy Fuwalos",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Mulcharmy",
+      "estado_actual": null
+     },
+     {
+      "id": "84192580",
+      "nombre": "Mulcharmy Purulia",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": "Mulcharmy",
+      "estado_actual": null
+     },
+     {
+      "id": "27204311",
+      "nombre": "Nibiru, the Primal Being",
+      "tipo": "Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "14558128",
+      "nombre": "Ash Blossom & Joyous Spring",
+      "tipo": "Tuner Effect Monster",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "94145021",
+      "nombre": "Droll & Lock Bird",
+      "tipo": "Effect Monster",
+      "copias": 2,
+      "arquetipo": null,
+      "estado_actual": "Limited"
+     },
+     {
+      "id": "87931906",
+      "nombre": "Lunalight Fusion",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": "Lunalight",
+      "estado_actual": null
+     },
+     {
+      "id": "2344618",
+      "nombre": "Lunalight Masquerade",
+      "tipo": "Continuous Spell",
+      "copias": 3,
+      "arquetipo": "Lunalight",
+      "estado_actual": null
+     },
+     {
+      "id": "48444114",
+      "nombre": "Luna Light Perfume",
+      "tipo": "Normal Spell",
+      "copias": 2,
+      "arquetipo": "Lunalight",
+      "estado_actual": null
+     },
+     {
+      "id": "57103969",
+      "nombre": "Fire Formation - Tenki",
+      "tipo": "Continuous Spell",
+      "copias": 2,
+      "arquetipo": "Fire Formation",
+      "estado_actual": null
+     },
+     {
+      "id": "24094653",
+      "nombre": "Polymerization",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "81439174",
+      "nombre": "Foolish Burial",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Limited"
+     }
+    ]
+   },
+   "extra": {
+    "declarado": 15,
+    "cartas": [
+     {
+      "id": "54701958",
+      "nombre": "Lunalight Liger Dancer",
+      "tipo": "Fusion Effect Monster",
+      "copias": 2,
+      "arquetipo": "Lunalight",
+      "estado_actual": null
+     },
+     {
+      "id": "24550676",
+      "nombre": "Lunalight Leo Dancer",
+      "tipo": "Fusion Effect Monster",
+      "copias": 2,
+      "arquetipo": "Lunalight",
+      "estado_actual": null
+     },
+     {
+      "id": "81196066",
+      "nombre": "Lunalight Perfume Dancer",
+      "tipo": "Fusion Effect Monster",
+      "copias": 2,
+      "arquetipo": "Lunalight",
+      "estado_actual": null
+     },
+     {
+      "id": "97165977",
+      "nombre": "Lunalight Panther Dancer",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": "Lunalight",
+      "estado_actual": null
+     },
+     {
+      "id": "88753594",
+      "nombre": "Lunalight Sabre Dancer",
+      "tipo": "Fusion Effect Monster",
+      "copias": 1,
+      "arquetipo": "Lunalight",
+      "estado_actual": null
+     },
+     {
+      "id": "96381979",
+      "nombre": "Brotherhood of the Fire Fist - Tiger King",
+      "tipo": "Xyz Effect Monster",
+      "copias": 1,
+      "arquetipo": "Fire Fist",
+      "estado_actual": null
+     },
+     {
+      "id": "66011101",
+      "nombre": "Number 60: Dugares the Timeless",
+      "tipo": "Xyz Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "32530043",
+      "nombre": "Gallant Granite",
+      "tipo": "Xyz Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "8809344",
+      "nombre": "Outer Entity Nyarla",
+      "tipo": "Xyz Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "90590304",
+      "nombre": "Number 41: Bagooska the Terribly Tired Tapir",
+      "tipo": "Xyz Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "50277355",
+      "nombre": "Cross-Sheep",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "29301450",
+      "nombre": "S:P Little Knight",
+      "tipo": "Link Effect Monster",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": null
+     }
+    ]
+   },
+   "side": {
+    "declarado": 15,
+    "cartas": [
+     {
+      "id": "24203749",
+      "nombre": "The Great Gallant Bandit",
+      "tipo": "Effect Monster",
+      "copias": 3,
+      "arquetipo": null,
+      "estado_actual": null
+     },
+     {
+      "id": "58570206",
+      "nombre": "Heavy Polymerization",
+      "tipo": "Normal Spell",
+      "copias": 2,
+      "arquetipo": "Polymerization",
+      "estado_actual": null
+     },
+     {
+      "id": "24299458",
+      "nombre": "Forbidden Droplet",
+      "tipo": "Quick-Play Spell",
+      "copias": 3,
+      "arquetipo": "Forbidden",
+      "estado_actual": null
+     },
+     {
+      "id": "25311006",
+      "nombre": "Triple Tactics Talent",
+      "tipo": "Normal Spell",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "24224830",
+      "nombre": "Called by the Grave",
+      "tipo": "Quick-Play Spell",
+      "copias": 1,
+      "arquetipo": null,
+      "estado_actual": "Forbidden"
+     },
+     {
+      "id": "40366667",
+      "nombre": "Dominus Impulse",
+      "tipo": "Normal Trap",
+      "copias": 3,
+      "arquetipo": "Dominus",
+      "estado_actual": null
+     },
+     {
+      "id": "29549364",
+      "nombre": "Mask of Restrict",
+      "tipo": "Continuous Trap",
+      "copias": 1,
+      "arquetipo": "Mask",
+      "estado_actual": null
+     },
+     {
+      "id": "85692042",
+      "nombre": "Primathmech Alembertian",
+      "tipo": "Xyz Effect Monster",
+      "copias": 1,
+      "arquetipo": "Mathmech",
+      "estado_actual": null
+     }
+    ]
+   },
+   "pais": "Chile",
+   "arquetipo_pagina": "Lunalight",
+   "top8": true,
+   "afectadas": [
+    {
+     "nombre": "Droll & Lock Bird",
+     "seccion": "main",
+     "copias": 2,
+     "estado_api": "Limited",
+     "cambio_19_10": "Limited",
+     "coincide": true
+    },
+    {
+     "nombre": "Number 60: Dugares the Timeless",
+     "seccion": "extra",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Number 41: Bagooska the Terribly Tired Tapir",
+     "seccion": "extra",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Cross-Sheep",
+     "seccion": "extra",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Triple Tactics Talent",
+     "seccion": "side",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    },
+    {
+     "nombre": "Called by the Grave",
+     "seccion": "side",
+     "copias": 1,
+     "estado_api": "Forbidden",
+     "cambio_19_10": "Forbidden",
+     "coincide": true
+    }
+   ]
+  }
+ ],
+ "jugadores": "128",
+ "fecha": "2026-10-17"
+}

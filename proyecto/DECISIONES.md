@@ -50,6 +50,14 @@
   YouTube id 406179788 (uuid 2839759467113367336) · TikTok id 406179805 (uuid 7518058148912844050). Música: 06.
 - La rotación de música avanza con CADA publicación (semanal o especial).
 
+## Mejoras visuales v3 — EN PRUEBA (26/10/2026, pendiente de aprobación de Bruno)
+- Neones de títulos (letreros, posición, etiquetas) parpadean en bucle irregular, tipo "mal estado".
+- Listas ordenadas Monstruos → Mágicas → Trampas con subtítulo por grupo; Extra por Fusión → Sincronía → Xyz → Link.
+- Estado de cartas con emojis: 🚫 prohibida · 1️⃣ limitada · 2️⃣ semilimitada (lista vigente, vía API YGOPRODeck).
+- Música al 50% de volumen (≈ -20 LUFS) con entrada suave de 1,5 s.
+- Listas de más de 50 cartas distintas pasan a 4 columnas; nombres largos ocupan 2 celdas.
+- Prueba: Regional WCQ Santiago 2026 (17/10, 128 jugadores). Solo 6 de 8 listas publicadas. NO programado en Metricool.
+
 ## Contador del límite del plan Free de Metricool (pedido por Bruno 26/10/2026)
 - Regla oficial (help.metricool.com, "Main differences between Free and paid plans"):
   20 publicaciones POR MES CALENDARIO; cuenta UNA POR CADA RED (TikTok + YouTube = 2);

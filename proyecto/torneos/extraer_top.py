@@ -41,8 +41,25 @@ def main(url, salida):
             m = re.search(pat, dh); meta[campo] = html.unescape(m.group(1)).strip() if m else None
         data["listas"].append(dict(url=u, **meta, **secciones(dh)))
         time.sleep(0.6)
+    # posición, jugador y país desde la tabla de resultados del torneo
+    rows = re.findall(r'<a class="tournament_table_row[^"]*"[^>]*href="(/deck/[^"]+)"[^>]*>(.*?)</a>', h, re.S)
+    by = {l["url"].replace("https://ygoprodeck.com", ""): l for l in data["listas"]}
+    ultimo = None
+    for href, body in rows:
+        l = by.get(href)
+        if not l: continue
+        pos = re.search(r"<b>([^<]+)</b>", body); pais = re.search(r'country-flag" title="([^"]+)"', body)
+        nom = re.search(r'player-name">([^<]+)<', body)
+        arq = re.findall(r'badge-ygoprodeck">(?:<img[^>]*>)?([^<]+)<', body)
+        if pos: ultimo = pos.group(1).strip()
+        l.update(posicion=ultimo, pais=pais.group(1) if pais else None,
+                 jugador=html.unescape(nom.group(1)).strip() if nom else None,
+                 arquetipo_pagina=html.unescape(arq[0]).strip() if arq else l.get("deck"),
+                 top8=ultimo in ("Winner", "Runner-Up", "Top 4", "Top 8"))
+    m = re.search(r"(\d[\d,\.]*)\s*Duelists", h); f = re.search(r"(\d{4}-\d{2}-\d{2})", h)
+    data["jugadores"] = m.group(1) if m else None; data["fecha"] = f.group(1) if f else None
     json.dump(data, open(salida, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    print(f"ok: {len(data['listas'])} listas → {salida}")
+    print(f"ok: {len(data['listas'])} listas → {salida} · fecha {data['fecha']} · jugadores {data['jugadores']} · top8 {sum(1 for l in data['listas'] if l.get('top8'))}")
 
 if __name__ == "__main__":
     main(sys.argv[1], sys.argv[2])

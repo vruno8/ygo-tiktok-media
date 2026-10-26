@@ -78,10 +78,10 @@ def reparto(t, c):
 <div class='sign' style='right:40px;top:170px;color:#2EF2FF;font-size:66px'>分布</div>
 <div class='top'><span class='handle'>{c['handle']}</span></div>
 <div class='jp' style='top:170px'>EL TOP 8 EN NÚMEROS</div>
-<div class='hl' style='top:240px;right:200px;font-size:96px'>Solo 3 decks en el top 8</div>
+<div class='hl' style='top:240px;right:200px;font-size:96px'>{esc(c.get('titulo_reparto', 'Solo 3 decks en el top 8'))}</div>
 <div class='stack' style='top:620px'>
 <div class='hud' data-l='DECKS EN EL TOP 8'>{bars}</div>
-<div class='hud loss' data-l='DESPUÉS DEL 19/10'><div class='mix' style='font:600 40px/1.2 Chakra Petch;color:#fff;padding:14px 0'>{esc(c['dato_reparto'])}</div></div>
+<div class='hud loss' data-l='{esc(c.get("etiqueta_reparto", "DESPUÉS DEL 19/10"))}'><div class='mix' style='font:600 40px/1.2 Chakra Petch;color:#fff;padding:14px 0'>{esc(c['dato_reparto'])}</div></div>
 </div>""")
 
 def deck_slide(l, n, c):
@@ -138,10 +138,10 @@ FULL_CSS = T_CSS + "".join(f"@font-face{{font-family:'Plex Cond';font-weight:{w}
 .sec b{font:700 30px 'Chakra Petch';color:#05071A;background:#2EF2FF;padding:0 12px}
 .sec .ty{margin-left:auto;display:flex;gap:6px}
 .sec .ty i{font:700 24px 'Plex Cond';font-style:normal;color:#05071A;padding:0 10px;min-width:44px;text-align:center}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.grid{display:grid;grid-template-columns:repeat(var(--cols,3),1fr);gap:6px}
 .c{display:flex;align-items:stretch;height:var(--h);background:#0B1036;border:1px solid rgba(143,166,217,.25);overflow:hidden;position:relative}
 .c .fr{width:12px;flex:none}
-.c .q{width:44px;flex:none;display:flex;align-items:center;justify-content:center;font:700 28px 'Chakra Petch';color:#fff;background:rgba(255,255,255,.06)}
+.c .q{width:var(--qw,44px);flex:none;display:flex;align-items:center;justify-content:center;font:700 28px 'Chakra Petch';color:#fff;background:rgba(255,255,255,.06)}
 .c .n{flex:1;padding:0 8px;display:flex;align-items:center;font:500 var(--fs)/1.04 'Plex Cond';color:#EAF6FF;overflow:hidden}
 .c .n span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .c.ban{border-color:#FF3EA5;box-shadow:inset 0 0 0 1px #FF3EA5}
@@ -150,45 +150,81 @@ FULL_CSS = T_CSS + "".join(f"@font-face{{font-family:'Plex Cond';font-weight:{w}
 .c .tag{position:absolute;right:0;top:0;font:700 15px/1 'Chakra Petch';padding:3px 5px;color:#05071A}
 .leg{display:flex;gap:22px;font:500 22px 'Chakra Petch';color:#8FA6D9;margin-top:10px;flex-wrap:wrap}
 .leg i{display:inline-block;width:18px;height:18px;margin-right:8px;vertical-align:-2px}
+.gh{grid-column:1/-1;display:flex;align-items:center;gap:10px;font:700 19px/1 'Chakra Petch';letter-spacing:2px;margin:4px 0 0;height:22px}
+.gh:after{content:'';flex:1;height:1px;background:currentColor;opacity:.45}
+.c.semi{border-color:#C6FF3D;box-shadow:inset 0 0 0 1px #C6FF3D}
+.c.ban .n,.c.lim .n,.c.semi .n{padding-right:50px}
+.list[style*="--cols:4"] .c .em{font-size:22px;right:4px}
+.list[style*="--cols:4"] .c.ban .n,.list[style*="--cols:4"] .c.lim .n,.list[style*="--cols:4"] .c.semi .n{padding-right:32px}
+.c .em{position:absolute;right:6px;top:50%;transform:translateY(-50%);font:28px/1 'Noto Color Emoji';
+ filter:drop-shadow(0 0 4px var(--g)) drop-shadow(0 0 10px var(--g))}
+.leg .e{font:24px/1 'Noto Color Emoji';margin-right:8px;vertical-align:-3px;filter:drop-shadow(0 0 6px var(--g))}
 """
 FRAME = [("Ritual", "#7FA8D8"), ("Fusion", "#A086B7"), ("Synchro", "#E9E9E9"), ("Xyz", "#3A3A3A"), ("Link", "#2A5BD7"),
          ("Pendulum", "linear-gradient(#FF8B53 50%,#1D9E74 50%)"), ("Normal Monster", "#E8C35A"), ("Monster", "#FF8B53"),
          ("Spell", "#1D9E74"), ("Trap", "#BC5A84")]
-def frame(t): return next(col for k, col in FRAME if k in t)
+def frame(t):
+    if "Spell" in t: return "#1D9E74"   # "Ritual Spell" es mágica, no monstruo ritual
+    if "Trap" in t: return "#BC5A84"
+    return next(col for k, col in FRAME if k in t)
 def grupo(t): return 0 if "Monster" in t else 1 if "Spell" in t else 2
 
-def deck_full(l, n, c, banned):
+EXTRA_ORDEN = ["Fusion", "Synchro", "Xyz", "Link"]
+MARCA = {"Forbidden": ("ban", "🚫", "#FF3EA5"), "Limited": ("lim", "1️⃣", "#FFB020"), "Semi-Limited": ("semi", "2️⃣", "#C6FF3D")}
+GRUPOS = [("MONSTRUOS", "#FF8B53"), ("MÁGICAS", "#1D9E74"), ("TRAMPAS", "#E07AA8")]
+
+def deck_full(l, n, c, total=8):
     lab, col = POS[l["posicion"]]
     af = {a["nombre"]: a["cambio_19_10"] for a in l["afectadas"]}
-    filas = lambda k: -(-len(l[k]["cartas"]) // 3)
-    nf = filas("main") + filas("extra") + filas("side")
+    estado = lambda x: x.get("estado_actual") if "estado_actual" in x else af.get(x["nombre"])
+    unicas = sum(len(l[k]["cartas"]) for k in ("main", "extra", "side"))
+    cols = 4 if unicas > 50 else 3   # listas muy largas (p. ej. 60 cartas) pasan a 4 columnas
+    ancho = lambda x: 2 if cols == 4 and len(x["nombre"]) > 34 else 1   # en 4 columnas, los nombres largos ocupan 2 celdas
+    def filas_sec(k):
+        if k == "extra": return -(-sum(ancho(x) for x in l[k]["cartas"]) // cols), 0
+        gs = [sum(ancho(x) for x in l[k]["cartas"] if grupo(x["tipo"]) == g) for g in (0, 1, 2)]
+        return sum(-(-v // cols) for v in gs), sum(1 for v in gs if v)
+    fm, gm = filas_sec("main"); fe, _ = filas_sec("extra"); fsd, gsd = filas_sec("side")
+    nf = fm + fe + fsd; ngh = gm + gsd
     top_y = 380 if len(l["deck"]) > 40 else 336
-    h = max(40, min(62, int((1545 - top_y - 3 * 52 - 70) / nf) - 6)); fs = 25 if h >= 54 else 22 if h >= 46 else 20
+    h = max(38, min(62, int((1545 - top_y - 3 * 50 - 64 - ngh * 30) / nf) - 6)); fs = 25 if h >= 54 else 22 if h >= 46 else 20
+    if cols == 4: fs = min(fs, 19)
     def seccion(k, nombre):
-        cs = sorted(l[k]["cartas"], key=lambda x: (grupo(x["tipo"]), -x["copias"], x["nombre"]))
+        sub = lambda t: next((i for i, s in enumerate(EXTRA_ORDEN) if s in t), 9)
+        cs = sorted(l[k]["cartas"], key=lambda x: (grupo(x["tipo"]), sub(x["tipo"]) if k == "extra" else 0, -x["copias"], x["nombre"]))
         tot = sum(x["copias"] for x in cs)
         cnt = [sum(x["copias"] for x in cs if grupo(x["tipo"]) == g) for g in (0, 1, 2)]
         ty = "".join(f"<i style='background:{bg}'>{v}</i>" for v, bg in zip(cnt, ("#FF8B53", "#1D9E74", "#BC5A84")) if v) if k != "extra" else ""
-        tiles = ""
+        tiles = ""; g_prev = None
         for x in cs:
-            st = af.get(x["nombre"])
-            cls = " ban" if st == "Forbidden" else " lim" if st else ""
-            tag = (f"<span class='tag' style='background:{'#FF3EA5' if st=='Forbidden' else '#FFB020'}'>{'PROH' if st=='Forbidden' else 'LIM'}</span>" if st else "")
+            g = grupo(x["tipo"])
+            if k != "extra" and g != g_prev:
+                nom_g, col_g = GRUPOS[g]
+                tiles += f"<div class='gh' style='color:{col_g}'>{nom_g} · {cnt[g]}</div>"
+                g_prev = g
+            st = estado(x)
+            cls = f" {MARCA[st][0]}" if st else ""
+            tag = f"<span class='em' style='--g:{MARCA[st][2]}'>{MARCA[st][1]}</span>" if st else ""
             fr = frame(x["tipo"])
-            fsx = f" style='font-size:{min(fs, 20) - (2 if len(x['nombre']) > 44 else 0)}px'" if len(x["nombre"]) > 32 else ""
-            tiles += (f"<div class='c{cls}'><span class='fr' style='background:{fr}'></span><span class='q'>{x['copias']}</span>"
+            lim_len = (18 if st else 24) if cols == 4 and ancho(x) == 1 else (60 if cols == 4 else 32)
+            fsx = f" style='font-size:{min(fs, 20 if cols == 3 else 17) - ((3 if cols == 4 else 2) if len(x['nombre']) > 44 else 0)}px'" if len(x["nombre"]) > lim_len else ""
+            wide = " style='grid-column:span 2'" if ancho(x) == 2 else ""
+            tiles += (f"<div class='c{cls}'{wide}><span class='fr' style='background:{fr}'></span><span class='q'>{x['copias']}</span>"
                       f"<span class='n'{fsx}><span>{esc(x['nombre'])}</span></span>{tag}</div>")
         return f"<div class='sec'><b>{tot}</b>{nombre}<span class='ty'>{ty}</span></div><div class='grid'>{tiles}</div>"
-    nfb = sum(1 for v in af.values() if v == "Forbidden"); nlb = len(af) - nfb
-    leyenda = (f"<div class='leg'><span><i style='background:#FF3EA5'></i>Prohibida desde 19/10 ({nfb})</span>"
-               f"<span><i style='background:#FFB020'></i>Limitada desde 19/10 ({nlb})</span></div>")
+    todas = [x for k in ("main", "extra", "side") for x in l[k]["cartas"]]
+    cuenta = {e: sum(1 for x in todas if estado(x) == e) for e in MARCA}
+    leyenda = ("<div class='leg'>" + "".join(
+        f"<span><span class='e' style='--g:{MARCA[e][2]}'>{MARCA[e][1]}</span>{t} ({cuenta[e]})</span>"
+        for e, t in (("Forbidden", "Prohibida"), ("Limited", "Limitada"), ("Semi-Limited", "Semilimitada")))
+        + "<span>· lista vigente</span></div>")
     return page(FULL_CSS, f"""{skyline()}
 <div class='sign' style='right:40px;top:150px;color:{col};font-size:60px'>{'優勝' if l['posicion']=='Winner' else '決闘'}</div>
 <div class='top'><span class='handle'>{c['handle']}</span></div>
 <div class='pos2' style='color:{col}'>{lab}</div>
-<div class='who2'>{esc(l['jugador'])} <span>· {PAIS.get(l['pais'], l['pais'] or '')} · lista {n}/8</span></div>
+<div class='who2' style='white-space:nowrap;font-size:{32 if len(l["jugador"]) > 24 else 38}px'>{esc(l['jugador'])} <span>· {PAIS.get(l['pais'], l['pais'] or '')} · lista {n}/{total}</span></div>
 <div class='deck2'>{esc(l['deck'])}</div>
-<div class='list' style='top:{top_y}px;--h:{h}px;--fs:{fs}px'>
+<div class='list' style='top:{top_y}px;--h:{h}px;--fs:{fs}px;--cols:{cols}'>
 {seccion('main','MAIN')}{seccion('extra','EXTRA')}{seccion('side','SIDE')}{leyenda}</div>""")
 
 def cierre(t, c):
@@ -205,7 +241,7 @@ def cierre(t, c):
 def main(tj, cj, out):
     t = json.load(open(tj, encoding="utf-8")); c = json.load(open(cj, encoding="utf-8")); c.setdefault("handle", "@vruno_")
     top = [l for l in t["listas"] if l["top8"]]
-    slide = (lambda l, i: deck_full(l, i, c, None)) if c.get("formato_lista", "completa") == "completa" else (lambda l, i: deck_slide(l, i, c))
+    slide = (lambda l, i: deck_full(l, i, c, len(top))) if c.get("formato_lista", "completa") == "completa" else (lambda l, i: deck_slide(l, i, c))
     pages = [cover(t, c), reparto(t, c)] + [slide(l, i) for i, l in enumerate(top, 1)] + [cierre(t, c)]
     out = pathlib.Path(out); out.mkdir(parents=True, exist_ok=True); tmp = out / "_html"; tmp.mkdir(exist_ok=True)
     files = []
@@ -216,6 +252,15 @@ def main(tj, cj, out):
             pg.goto(f.as_uri()); pg.evaluate("document.fonts.ready"); pg.wait_for_timeout(700)
             png = tmp / f"lamina_{i}.png"; pg.screenshot(path=str(png)); files.append(png)
             Image.open(png).convert("RGB").save(out / f"lamina_{i}.jpg", quality=88)
+            if c.get("parpadeo", True):
+                # zonas de neón (con margen para el brillo) + versión "apagada" para el parpadeo en video
+                cajas = pg.evaluate("""[...document.querySelectorAll('.sign,.pos,.pos2,.big,.jp')].map(e=>{const r=e.getBoundingClientRect();
+                    const m=34, x=Math.max(0,Math.floor(r.left-m)), y=Math.max(0,Math.floor(r.top-m));
+                    return {x, y, w:Math.min(1080,Math.ceil(r.right+m))-x, h:Math.min(1920,Math.ceil(r.bottom+m))-y}})""")
+                pg.add_style_tag(content=".sign,.pos,.pos2,.big,.jp{opacity:.2 !important;text-shadow:none !important;box-shadow:none !important;filter:saturate(.35) brightness(.7)}")
+                pg.wait_for_timeout(150)
+                pg.screenshot(path=str(out / f"lamina_{i}_off.png"))
+                json.dump(cajas, open(out / f"lamina_{i}_neon.json", "w"))
         b.close()
     ims = [Image.open(f) for f in files]; gap, cols = 30, 4; rows = (len(ims) + cols - 1) // cols
     sh = Image.new("RGB", (cols * 1080 + (cols + 1) * gap, rows * 1920 + (rows + 1) * gap), (40, 40, 44))

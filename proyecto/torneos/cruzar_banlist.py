@@ -49,6 +49,7 @@ def main(path):
                     c["nombre_api"] = ci["name"]
                 c["arquetipo"] = ci.get("archetype")
                 st_api = (ci.get("banlist_info") or {}).get("ban_tcg")
+                c["estado_actual"] = st_api  # estado vigente en TCG hoy: Forbidden / Limited / Semi-Limited / None
                 st_of = OFICIAL.get(NORM(c["nombre"]))
                 if st_of or (st_api and c["copias"] > LIMITE[st_api]):
                     af.append(dict(nombre=c["nombre"], seccion=k, copias=c["copias"], estado_api=st_api,

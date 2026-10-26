@@ -7,13 +7,15 @@ Uso:  python3 make_video.py <carpeta_laminas> <id_pista> <salida.mp4>
 - La música se nivela (-14 LUFS), entra con fundido corto y sale con fundido de 2,5 s.
 - Pistas más cortas que el video se repiten en bucle con transición suave, sin sus silencios internos.
 """
-import sys, subprocess, pathlib, tempfile
+import sys, subprocess, pathlib, tempfile, json, random
 
 BASE = pathlib.Path(__file__).parent.resolve()
 MUS = BASE / "musica"
 SEG = 10.0      # segundos por lámina
 XF = 0.5        # fundido entre láminas
 LOOP_XF = 1.0   # transición entre repeticiones del bucle
+VOLUMEN = 0.5   # música al 50% (pedido de Bruno, 26/10/2026), después de nivelar
+FADE_IN = 1.5   # entrada suave de la música
 
 # segmentos con música (inicio, fin) en segundos; None = pista completa
 PISTAS = {
@@ -64,9 +66,34 @@ def preparar_audio(pista, total, tmp):
     # 3) recortar, nivelar y fundidos
     final = tmp / "audio.m4a"
     run(["ffmpeg", "-y", "-i", str(looped), "-t", str(total),
-         "-af", f"loudnorm=I=-14:TP=-1.5:LRA=11,afade=t=in:d=0.3,afade=t=out:st={total - 2.5}:d=2.5",
+         "-af", f"loudnorm=I=-14:TP=-1.5:LRA=11,volume={VOLUMEN},afade=t=in:d={FADE_IN},afade=t=out:st={total - 2.5}:d=2.5",
          "-c:a", "aac", "-b:a", "160k", "-ar", "44100", str(final)])
     return final, reps
+
+def patron_parpadeo(rng):
+    """Ventanas de 'apagado' irregulares dentro de un ciclo: tartamudeo rápido y, a veces, una caída larga."""
+    P = rng.uniform(2.4, 4.6); ev = []
+    t = rng.uniform(0.3, P * 0.5)
+    for _ in range(rng.choice([2, 3, 4])):          # tartamudeo
+        d = rng.uniform(0.03, 0.08); ev.append((t, t + d)); t += d + rng.uniform(0.04, 0.12)
+    if rng.random() < 0.45:                           # caída larga ocasional
+        t2 = rng.uniform(t + 0.4, P - 0.4) if P - 0.4 > t + 0.4 else t + 0.4
+        ev.append((t2, t2 + rng.uniform(0.18, 0.35)))
+    return P, rng.uniform(0, P), [(a, b) for a, b in ev if b < P]
+
+def clip_animado(base, off, cajas, largo, salida, semilla):
+    rng = random.Random(semilla)
+    n = len(cajas)
+    f = [f"[1]split={n}" + "".join(f"[b{i}]" for i in range(n))] if n > 1 else ["[1]null[b0]"]
+    last = "[0]"
+    for i, c in enumerate(cajas):
+        P, fase, ev = patron_parpadeo(rng)
+        cond = "+".join(f"between(mod(t+{fase:.3f},{P:.3f}),{a:.3f},{b:.3f})" for a, b in ev) or "0"
+        f.append(f"[b{i}]crop={c['w']}:{c['h']}:{c['x']}:{c['y']}[c{i}]")
+        f.append(f"{last}[c{i}]overlay={c['x']}:{c['y']}:enable='{cond}'[o{i}]"); last = f"[o{i}]"
+    f.append(f"{last}fps=30,format=yuv420p,setsar=1[v]")
+    run(["ffmpeg", "-y", "-loop", "1", "-t", str(largo), "-i", str(base), "-loop", "1", "-t", str(largo), "-i", str(off),
+         "-filter_complex", ";".join(f), "-map", "[v]", "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", "-t", str(largo), str(salida)])
 
 def main(carpeta, pista, salida):
     carpeta = pathlib.Path(carpeta)
@@ -78,7 +105,14 @@ def main(carpeta, pista, salida):
         ins, filt = [], []
         for i, f in enumerate(laminas):
             ln = SEG + XF if i < n - 1 else SEG
-            ins += ["-loop", "1", "-t", str(ln), "-i", str(f)]
+            off = carpeta / f"{f.stem}_off.png"; cj = carpeta / f"{f.stem}_neon.json"
+            if off.exists() and cj.exists() and json.load(open(cj)):
+                base = carpeta / "_html" / f"{f.stem}.png"
+                clip = tmp / f"{f.stem}.mp4"
+                clip_animado(base if base.exists() else f, off, json.load(open(cj)), ln, clip, semilla=i * 7919)
+                ins += ["-i", str(clip)]
+            else:
+                ins += ["-loop", "1", "-t", str(ln), "-i", str(f)]
             filt.append(f"[{i}]fps=30,scale=1080:1920,format=yuv420p,setsar=1[v{i}]")
         last = "[v0]"
         for i in range(1, n):

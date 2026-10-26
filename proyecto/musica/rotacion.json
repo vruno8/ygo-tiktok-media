@@ -1,5 +1,7 @@
 {
   "orden": ["04", "06", "14"],
-  "proxima": "04",
-  "historial": []
+  "proxima": "14",
+  "historial": [
+    {"fecha": "2026-10-26", "post": "Especial YCS Houston 2026 (TikTok + YouTube)", "pista": "06"}
+  ]
 }

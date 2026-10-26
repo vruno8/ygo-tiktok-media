@@ -42,6 +42,14 @@
 - Herramientas: render_semana.py (modo video) + make_video.py.
 - Estado: muestras enviadas el 25/10 23:30, PENDIENTE visto bueno de Bruno.
 
+## Especiales de torneo
+- Formato aprobado por Bruno (25/10/2026): portada, reparto, 1 lámina por lista con la lista COMPLETA en grilla de texto
+  (franja de color por tipo de carta, cantidades, marcas PROH/LIM del banlist vigente), cierre con pregunta y fuentes.
+- Sin ilustraciones oficiales de cartas (decisión de Claude: no reproduce arte de Konami en contenido publicado).
+- YCS Houston 2026: programado 26/10/2026 12:00 Chile, PÚBLICO.
+  YouTube id 406179788 (uuid 2839759467113367336) · TikTok id 406179805 (uuid 7518058148912844050). Música: 06.
+- La rotación de música avanza con CADA publicación (semanal o especial).
+
 ## Contenido
 - Cobertura: juego de cartas Yu-Gi-Oh! (TCG, OCG, Master Duel, Duel Links). Anime solo si afecta al juego de cartas.
 - Cada noticia lleva etiqueta de región: TCG (cian #2EF2FF), OCG (rosa #FF3EA5), MD (lima #C6FF3D).

@@ -18,18 +18,22 @@ Antes de empezar: leer `DECISIONES.md`.
 - [ ] Letreros en japonés: usar solo palabras ya traducidas en DECISIONES.md o agregar la traducción ahí.
 
 ## 3. Renderizar y revisar
-- [ ] `python3 render_semana.py semanas/AAAA-MM-DD.json ../ygo-tiktok-media/AAAA/semana-AAAA-MM-DD`
+- [ ] `python3 render_semana.py semanas/AAAA-MM-DD.json ../ygo-tiktok-media/AAAA/semana-AAAA-MM-DD video`
 - [ ] Abrir `_html/vista_general.png` y revisar: sin textos superpuestos, nada en el tercio inferior, títulos completos.
 - [ ] No subir la carpeta `_html` a GitHub.
+- [ ] Pista de la semana: leer `musica/rotacion.json` → campo `proxima`.
+- [ ] `python3 make_video.py ../ygo-tiktok-media/AAAA/semana-AAAA-MM-DD <pista> ../ygo-tiktok-media/AAAA/semana-AAAA-MM-DD/video.mp4`
+- [ ] Revisar: duración = 10 s × láminas, sin silencios (silencedetect -40 dB), fotogramas en 5 s y en la última lámina.
+- [ ] Tras publicar: agregar la semana al `historial` y avanzar `proxima` al siguiente del `orden`.
+- [ ] Si `musica/` no existe (contenedor reciclado): pedir a Bruno los MP3 o recuperarlos desde donde se haya acordado guardarlos.
 
 ## 4. Subir imágenes
 - [ ] En `ygo-tiktok-media`: `git pull`, `git add AAAA/semana-*/lamina_*.jpg`, commit, push.
 - [ ] Verificar que una URL raw.githubusercontent.com responda 200 image/jpeg.
 
 ## 5. Borrador + aprobación
-- [ ] Generar también el Short: video ~30 s desde las láminas (portada con "Sigue mirando ▸▸" en vez de "Desliza").
-- [ ] Crear en Metricool 2 BORRADORES (`draft: true`), fecha domingo 19:00, ambos PÚBLICOS:
-      TikTok carrusel → `privacyOption: "PUBLIC_TO_EVERYONE"`, sin música.
+- [ ] Crear en Metricool 2 BORRADORES (`draft: true`) con el MISMO video.mp4, fecha domingo 19:00, ambos PÚBLICOS:
+      TikTok video → `privacyOption: "PUBLIC_TO_EVERYONE"`, `autoAddMusic: false` (el audio ya va en el video).
       YouTube Short → `privacy: "public"`, type short, madeForKids false, categoría GAMING.
       (Privado solo en pilotos/pruebas acordadas explícitamente.)
 - [ ] Enviar a Bruno en el chat: vista general + caption + lista de dudas/fuentes en conflicto.

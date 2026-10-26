@@ -1,6 +1,6 @@
 """Genera las láminas del resumen semanal (estilo E Cyber Japan).
 
-Uso:  python3 render_semana.py semanas/AAAA-MM-DD.json  <carpeta_salida>
+Uso:  python3 render_semana.py semanas/AAAA-MM-DD.json  <carpeta_salida>  [video|carrusel]   (por defecto: video)
 Salida: lamina_1.jpg ... lamina_N.jpg + vista_general.png
 """
 import sys, json, pathlib
@@ -31,7 +31,7 @@ def cover(d):
 <div class='jp' style='top:170px'>今週のニュース</div>
 <div class='hl' style='top:240px;right:200px'>Lo que pasó esta semana</div>
 <div class='hud' style='top:620px;right:180px' data-l='YU-GI-OH! JUEGO DE CARTAS // {d['semana'].upper()}'>{its}</div>
-<div class='swipe' style='top:1360px'>Desliza para el detalle ▸▸</div>""")
+<div class='swipe' style='top:1360px'>{'Sigue mirando ▸▸' if d.get('modo') == 'video' else 'Desliza para el detalle ▸▸'}</div>""")
 
 def _flow(s, rumor):
     rows = "".join(f"<div class='row'><div class='k'>{k}</div><div class='v'>{v}</div></div>" for k, v in s['filas'])
@@ -65,9 +65,10 @@ def sources(d):
 <div class='hud' style='top:560px;right:70px' data-l='CONSULTADAS'>{rows}</div>
 <div class='swipe' style='top:1430px;color:#2EF2FF;text-shadow:0 0 14px #2EF2FF'>Sígueme: resumen cada semana</div>""")
 
-def main(json_path, out_dir):
+def main(json_path, out_dir, modo="video"):
     d = json.loads(pathlib.Path(json_path).read_text(encoding="utf-8"))
     d.setdefault("handle", "@vruno_")
+    d["modo"] = modo
     out = pathlib.Path(out_dir); out.mkdir(parents=True, exist_ok=True)
     total = len(d["noticias"])
     pages = [cover(d)] + [news(s, i, total, d["handle"]) for i, s in enumerate(d["noticias"], 1)] + [sources(d)]
@@ -89,4 +90,4 @@ def main(json_path, out_dir):
     print(f"ok: {len(files)} láminas en {out}; vista general en {tmp / 'vista_general.png'}")
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2])
+    main(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else "video")

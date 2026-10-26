@@ -18,7 +18,7 @@
 ## Operación semanal (desde paso 5, acordado 25/10/2026)
 - Aviso agendado a ESTE chat cada domingo 10:00 (Chile); al terminar cada semana se agenda el siguiente.
 - Flujo: investigar → JSON → render_semana.py → GitHub → borrador Metricool → vista previa en chat → "sí" de Bruno → programar.
-- Publicación: domingo 19:00, PÚBLICA en TikTok y YouTube directamente desde Metricool (Bruno no debe entrar a las apps a cambiar privacidad), sin música (revisar música tras 3 semanas con métricas).
+- Publicación: domingo 19:00, PÚBLICA en TikTok y YouTube directamente desde Metricool (Bruno no debe entrar a las apps a cambiar privacidad), con música de la rotación incrustada en el video (revisar música tras 3 semanas con métricas).
 - Aprobación: "sí" explícito en el chat. Si llega después de las 19:00 → publicar 15 min después. Sin respuesta al lunes 12:00 → se salta la semana.
 - Procedimiento detallado: RUNBOOK.md.
 
@@ -31,6 +31,16 @@
 - Short piloto: programado 25/10/2026 02:56, privado, Metricool id 405462857 (uuid 2928272605170385166).
   Metricool aceptó el MP4 desde raw.githubusercontent.com pese al content-type genérico.
 - YouTube: título "Resumen Yu-Gi-Oh! | DD al DD mes #shorts", categoría GAMING, tags yugioh/yugioh tcg/yugioh español + tema.
+
+## Formato video para ambas redes (instrucción de Bruno, 25/10/2026 23:18)
+- TikTok y YouTube reciben el MISMO video vertical 1080×1920 (reemplaza el carrusel de TikTok).
+- 10 s por lámina, fundido 0,5 s. Portada dice "Sigue mirando ▸▸". 6 láminas = 60 s.
+- Música en rotación semanal 04 Passionate Duelist → 06 Carefree After School → 14 Interlude (estado en musica/rotacion.json).
+  Copyright: Bruno declara tenerlo resuelto.
+- Audio: se recorta el silencio inicial (~1,1 s), nivelado a -14 LUFS, fundido de salida 2,5 s.
+- Interlude (23 s, 3 frases con pausas): se unen las frases sin pausas y se repite en bucle con transición de 1 s.
+- Herramientas: render_semana.py (modo video) + make_video.py.
+- Estado: muestras enviadas el 25/10 23:30, PENDIENTE visto bueno de Bruno.
 
 ## Contenido
 - Cobertura: juego de cartas Yu-Gi-Oh! (TCG, OCG, Master Duel, Duel Links). Anime solo si afecta al juego de cartas.

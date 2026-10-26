@@ -25,7 +25,15 @@ Antes de empezar: leer `DECISIONES.md`.
 - [ ] `python3 make_video.py ../ygo-tiktok-media/AAAA/semana-AAAA-MM-DD <pista> ../ygo-tiktok-media/AAAA/semana-AAAA-MM-DD/video.mp4`
 - [ ] Revisar: duración = 10 s × láminas, sin silencios (silencedetect -40 dB), fotogramas en 5 s y en la última lámina.
 - [ ] Tras publicar: agregar la semana al `historial` y avanzar `proxima` al siguiente del `orden`.
-- [ ] Si `musica/` no existe (contenedor reciclado): pedir a Bruno los MP3 o recuperarlos desde donde se haya acordado guardarlos.
+- [ ] Si `musica/` no existe (contenedor reciclado), recuperar:
+      1. Clonar `vruno8/ygo-tiktok-media` si no está (`/home/claude/ygo-tiktok-media`).
+      2. Leer la clave desde Google Drive: archivo id `1shI9GEBeAKFw_FVpgvNVJf2z00KNg-_g`
+         ("ygo-tiktok · clave de música (privado).txt") con read_file_content.
+      3. Guardarla en un archivo temporal (umask 077) y correr
+         `bash ygo-tiktok-media/musica/recuperar.sh <archivo_clave> /home/claude/ygo-tiktok/musica`.
+      4. Debe imprimir OK para las 3 pistas. Borrar el archivo temporal de la clave.
+      5. Si falla: pedir a Bruno que adjunte de nuevo los MP3.
+- [ ] Si falta todo el proyecto local: copiar `ygo-tiktok-media/proyecto/` a `/home/claude/ygo-tiktok/` y correr `npm install`.
 
 ## 4. Subir imágenes
 - [ ] En `ygo-tiktok-media`: `git pull`, `git add AAAA/semana-*/lamina_*.jpg`, commit, push.

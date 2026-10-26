@@ -50,6 +50,12 @@
   YouTube id 406179788 (uuid 2839759467113367336) · TikTok id 406179805 (uuid 7518058148912844050). Música: 06.
 - La rotación de música avanza con CADA publicación (semanal o especial).
 
+## Almacenamiento de la música (resuelto 26/10/2026)
+- MP3 cifrados con AES-256 en el repo público: `ygo-tiktok-media/musica/*.mp3.enc` (no se pueden escuchar sin clave).
+- Clave en Google Drive de Bruno (cuenta bruno@digitalgrowth.cl), archivo privado sin compartir,
+  id 1shI9GEBeAKFw_FVpgvNVJf2z00KNg-_g. Recuperación: `musica/recuperar.sh` (verifica huellas SHA-256).
+- Probado: clon limpio + clave leída desde Drive → 3 pistas idénticas a las originales.
+
 ## Contenido
 - Cobertura: juego de cartas Yu-Gi-Oh! (TCG, OCG, Master Duel, Duel Links). Anime solo si afecta al juego de cartas.
 - Cada noticia lleva etiqueta de región: TCG (cian #2EF2FF), OCG (rosa #FF3EA5), MD (lima #C6FF3D).

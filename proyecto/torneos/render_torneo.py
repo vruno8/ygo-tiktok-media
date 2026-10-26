@@ -125,6 +125,72 @@ def deck_slide(l, n, c):
  <ul class='cards' style='margin-top:6px'>{lis}</ul>
 </div>{loss}</div>""")
 
+_PLEX = (BASE / "node_modules/@fontsource/ibm-plex-sans-condensed/files").as_uri()
+FULL_CSS = T_CSS + "".join(f"@font-face{{font-family:'Plex Cond';font-weight:{w};src:url('{_PLEX}/ibm-plex-sans-condensed-latin-{w}-normal.woff2') format('woff2');}}" for w in (500, 600)) + """
+.pos2{position:absolute;left:66px;top:118px;z-index:10;font:700 96px/1 'Chakra Petch';text-shadow:0 0 16px currentColor,0 0 40px currentColor}
+.who2{position:absolute;left:70px;right:190px;top:232px;z-index:10;font:600 38px/1.1 'Chakra Petch';color:#fff}
+.who2 span{color:#8FA6D9;font-weight:500}
+.deck2{position:absolute;left:70px;right:190px;top:278px;z-index:10;font:700 40px/1.05 'Chakra Petch';color:#fff;
+ text-shadow:-3px 0 0 rgba(46,242,255,.9),3px 0 0 rgba(255,62,165,.9)}
+.list{position:absolute;left:36px;right:36px;z-index:10;background:rgba(5,7,26,.88);border:2px solid #2EF2FF;padding:10px 16px 14px;
+ box-shadow:0 0 26px rgba(46,242,255,.35)}
+.sec{display:flex;align-items:center;gap:14px;font:700 26px 'Chakra Petch';color:#2EF2FF;letter-spacing:1px;margin:8px 0 6px}
+.sec b{font:700 30px 'Chakra Petch';color:#05071A;background:#2EF2FF;padding:0 12px}
+.sec .ty{margin-left:auto;display:flex;gap:6px}
+.sec .ty i{font:700 24px 'Plex Cond';font-style:normal;color:#05071A;padding:0 10px;min-width:44px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.c{display:flex;align-items:stretch;height:var(--h);background:#0B1036;border:1px solid rgba(143,166,217,.25);overflow:hidden;position:relative}
+.c .fr{width:12px;flex:none}
+.c .q{width:44px;flex:none;display:flex;align-items:center;justify-content:center;font:700 28px 'Chakra Petch';color:#fff;background:rgba(255,255,255,.06)}
+.c .n{flex:1;padding:0 8px;display:flex;align-items:center;font:500 var(--fs)/1.04 'Plex Cond';color:#EAF6FF;overflow:hidden}
+.c .n span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.c.ban{border-color:#FF3EA5;box-shadow:inset 0 0 0 1px #FF3EA5}
+.c.lim{border-color:#FFB020;box-shadow:inset 0 0 0 1px #FFB020}
+.c.ban .n,.c.lim .n{padding-right:54px}
+.c .tag{position:absolute;right:0;top:0;font:700 15px/1 'Chakra Petch';padding:3px 5px;color:#05071A}
+.leg{display:flex;gap:22px;font:500 22px 'Chakra Petch';color:#8FA6D9;margin-top:10px;flex-wrap:wrap}
+.leg i{display:inline-block;width:18px;height:18px;margin-right:8px;vertical-align:-2px}
+"""
+FRAME = [("Ritual", "#7FA8D8"), ("Fusion", "#A086B7"), ("Synchro", "#E9E9E9"), ("Xyz", "#3A3A3A"), ("Link", "#2A5BD7"),
+         ("Pendulum", "linear-gradient(#FF8B53 50%,#1D9E74 50%)"), ("Normal Monster", "#E8C35A"), ("Monster", "#FF8B53"),
+         ("Spell", "#1D9E74"), ("Trap", "#BC5A84")]
+def frame(t): return next(col for k, col in FRAME if k in t)
+def grupo(t): return 0 if "Monster" in t else 1 if "Spell" in t else 2
+
+def deck_full(l, n, c, banned):
+    lab, col = POS[l["posicion"]]
+    af = {a["nombre"]: a["cambio_19_10"] for a in l["afectadas"]}
+    filas = lambda k: -(-len(l[k]["cartas"]) // 3)
+    nf = filas("main") + filas("extra") + filas("side")
+    top_y = 380 if len(l["deck"]) > 40 else 336
+    h = max(40, min(62, int((1545 - top_y - 3 * 52 - 70) / nf) - 6)); fs = 25 if h >= 54 else 22 if h >= 46 else 20
+    def seccion(k, nombre):
+        cs = sorted(l[k]["cartas"], key=lambda x: (grupo(x["tipo"]), -x["copias"], x["nombre"]))
+        tot = sum(x["copias"] for x in cs)
+        cnt = [sum(x["copias"] for x in cs if grupo(x["tipo"]) == g) for g in (0, 1, 2)]
+        ty = "".join(f"<i style='background:{bg}'>{v}</i>" for v, bg in zip(cnt, ("#FF8B53", "#1D9E74", "#BC5A84")) if v) if k != "extra" else ""
+        tiles = ""
+        for x in cs:
+            st = af.get(x["nombre"])
+            cls = " ban" if st == "Forbidden" else " lim" if st else ""
+            tag = (f"<span class='tag' style='background:{'#FF3EA5' if st=='Forbidden' else '#FFB020'}'>{'PROH' if st=='Forbidden' else 'LIM'}</span>" if st else "")
+            fr = frame(x["tipo"])
+            fsx = f" style='font-size:{min(fs, 20) - (2 if len(x['nombre']) > 44 else 0)}px'" if len(x["nombre"]) > 32 else ""
+            tiles += (f"<div class='c{cls}'><span class='fr' style='background:{fr}'></span><span class='q'>{x['copias']}</span>"
+                      f"<span class='n'{fsx}><span>{esc(x['nombre'])}</span></span>{tag}</div>")
+        return f"<div class='sec'><b>{tot}</b>{nombre}<span class='ty'>{ty}</span></div><div class='grid'>{tiles}</div>"
+    nfb = sum(1 for v in af.values() if v == "Forbidden"); nlb = len(af) - nfb
+    leyenda = (f"<div class='leg'><span><i style='background:#FF3EA5'></i>Prohibida desde 19/10 ({nfb})</span>"
+               f"<span><i style='background:#FFB020'></i>Limitada desde 19/10 ({nlb})</span></div>")
+    return page(FULL_CSS, f"""{skyline()}
+<div class='sign' style='right:40px;top:150px;color:{col};font-size:60px'>{'優勝' if l['posicion']=='Winner' else '決闘'}</div>
+<div class='top'><span class='handle'>{c['handle']}</span></div>
+<div class='pos2' style='color:{col}'>{lab}</div>
+<div class='who2'>{esc(l['jugador'])} <span>· {PAIS.get(l['pais'], l['pais'] or '')} · lista {n}/8</span></div>
+<div class='deck2'>{esc(l['deck'])}</div>
+<div class='list' style='top:{top_y}px;--h:{h}px;--fs:{fs}px'>
+{seccion('main','MAIN')}{seccion('extra','EXTRA')}{seccion('side','SIDE')}{leyenda}</div>""")
+
 def cierre(t, c):
     rows = "".join(f"<div class='row' style='grid-template-columns:1fr'><div class='v' style='font-size:42px'>{esc(a)}</div><div class='k'>{esc(b)}</div></div>" for a, b in c["fuentes"])
     return page(T_CSS, f"""{skyline()}
@@ -139,7 +205,8 @@ def cierre(t, c):
 def main(tj, cj, out):
     t = json.load(open(tj, encoding="utf-8")); c = json.load(open(cj, encoding="utf-8")); c.setdefault("handle", "@vruno_")
     top = [l for l in t["listas"] if l["top8"]]
-    pages = [cover(t, c), reparto(t, c)] + [deck_slide(l, i, c) for i, l in enumerate(top, 1)] + [cierre(t, c)]
+    slide = (lambda l, i: deck_full(l, i, c, None)) if c.get("formato_lista", "completa") == "completa" else (lambda l, i: deck_slide(l, i, c))
+    pages = [cover(t, c), reparto(t, c)] + [slide(l, i) for i, l in enumerate(top, 1)] + [cierre(t, c)]
     out = pathlib.Path(out); out.mkdir(parents=True, exist_ok=True); tmp = out / "_html"; tmp.mkdir(exist_ok=True)
     files = []
     with sync_playwright() as p:

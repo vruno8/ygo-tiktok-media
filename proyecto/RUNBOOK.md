@@ -44,7 +44,12 @@ Antes de empezar: leer `DECISIONES.md`.
       TikTok video → `privacyOption: "PUBLIC_TO_EVERYONE"`, `autoAddMusic: false` (el audio ya va en el video).
       YouTube Short → `privacy: "public"`, type short, madeForKids false, categoría GAMING.
       (Privado solo en pilotos/pruebas acordadas explícitamente.)
-- [ ] Enviar a Bruno en el chat: vista general + caption + lista de dudas/fuentes en conflicto.
+- [ ] Contador del límite Metricool (ver regla en DECISIONES.md): getScheduledPosts del MES de la publicación,
+      contar cada red por separado. Publicadas = status PUBLISHED; programadas = PENDING (draft:false).
+      Cifra a informar = publicadas + programadas + las que agrega este post.
+- [ ] Enviar a Bruno en el chat: vista general + caption + lista de dudas/fuentes en conflicto +
+      línea "Límite Metricool (<mes>): X de 20 (A publicadas + B programadas + C de este post) · quedan N".
+      Si X ≥ 16 → avisar. Si X > 20 → NO programar: la publicación 21 no saldría; proponer mover al mes siguiente.
 - [ ] Esperar "sí" explícito. Sin "sí" no se programa.
 - [ ] Con "sí": actualizar a programado (`draft: false`). Si el "sí" llega después de las 19:00, publicar 15 min después.
 - [ ] Sin respuesta al lunes 12:00: no publicar, avisar que la semana se saltó.
@@ -62,7 +67,7 @@ Antes de empezar: leer `DECISIONES.md`.
 4. Escribir `torneos/<slug>_config.json` (título, bajada, dato de reparto, pregunta, fuentes). Todo dato del reparto debe salir del JSON.
 5. `python3 torneos/render_torneo.py torneos/<slug>.json torneos/<slug>_config.json <carpeta>` → revisar vista general y borde inferior ≤ 1520 px.
 6. `python3 make_video.py <carpeta> <pista> <carpeta>/video.mp4` (pista: la próxima de la rotación).
-7. Mismo flujo de borrador + "sí" de Bruno. Cuenta como post extra dentro del límite de 20/mes.
+7. Mismo flujo de borrador + "sí" de Bruno, con la línea del contador del límite Metricool (suma 2: TikTok + YouTube).
 
 ## Caption (estilo 4, cercano)
 Título: `Resumen Yu-Gi-Oh! | DD al DD mes` (≤ 90 caracteres)

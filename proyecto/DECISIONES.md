@@ -50,6 +50,14 @@
   YouTube id 406179788 (uuid 2839759467113367336) · TikTok id 406179805 (uuid 7518058148912844050). Música: 06.
 - La rotación de música avanza con CADA publicación (semanal o especial).
 
+## Contador del límite del plan Free de Metricool (pedido por Bruno 26/10/2026)
+- Regla oficial (help.metricool.com, "Main differences between Free and paid plans"):
+  20 publicaciones POR MES CALENDARIO; cuenta UNA POR CADA RED (TikTok + YouTube = 2);
+  solo cuentan las PUBLICADAS (los programados y borradores no); se reinicia el día 1.
+  Se puede programar más de 20, pero solo se publican 20: la 21 no sale.
+- En cada entrega (semanal o especial) informar: "Límite Metricool (<mes>): X de 20 · quedan N".
+- Base esperada: 2 por semana → 8 a 10 al mes; espacio para 5 especiales en un mes de 5 domingos.
+
 ## Almacenamiento de la música (resuelto 26/10/2026)
 - MP3 cifrados con AES-256 en el repo público: `ygo-tiktok-media/musica/*.mp3.enc` (no se pueden escuchar sin clave).
 - Clave en Google Drive de Bruno (cuenta bruno@digitalgrowth.cl), archivo privado sin compartir,

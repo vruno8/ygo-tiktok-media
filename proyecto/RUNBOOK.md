@@ -47,6 +47,15 @@ Antes de empezar: leer `DECISIONES.md`.
 - [ ] Anotar en DECISIONES.md cualquier regla nueva.
 - [ ] Respaldar cambios del proyecto en `ygo-tiktok-media/proyecto/`.
 
+## Especial de torneo (top 8) — a pedido de Bruno, con link de YGOPRODeck
+1. `python3 torneos/extraer_top.py <url_torneo> torneos/<slug>.json` → revisa que Main/Extra/Side coincidan con lo declarado.
+2. Completar jugador/posición/país desde la tabla del torneo (ver bloque en extraer_top; si falla, revisar HTML).
+3. `python3 torneos/cruzar_banlist.py torneos/<slug>.json` → si hay banlist nuevo, actualizar CAMBIOS en el script.
+4. Escribir `torneos/<slug>_config.json` (título, bajada, dato de reparto, pregunta, fuentes). Todo dato del reparto debe salir del JSON.
+5. `python3 torneos/render_torneo.py torneos/<slug>.json torneos/<slug>_config.json <carpeta>` → revisar vista general y borde inferior ≤ 1520 px.
+6. `python3 make_video.py <carpeta> <pista> <carpeta>/video.mp4` (pista: la próxima de la rotación).
+7. Mismo flujo de borrador + "sí" de Bruno. Cuenta como post extra dentro del límite de 20/mes.
+
 ## Caption (estilo 4, cercano)
 Título: `Resumen Yu-Gi-Oh! | DD al DD mes` (≤ 90 caracteres)
 Texto: apertura cercana + las 4 noticias en una frase + pregunta + hashtags

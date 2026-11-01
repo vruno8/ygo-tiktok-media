@@ -1,0 +1,146 @@
+{
+ "semana": "26 oct al 1 nov",
+ "portada": [
+  {
+   "tag": "MD",
+   "texto": "Master Duel cambia su lista de prohibidas"
+  },
+  {
+   "tag": "TCG",
+   "texto": "Maze of Machines llega en marzo de 2027"
+  },
+  {
+   "tag": "OCG",
+   "texto": "Immortal Phoenix ya salió en Japón"
+  },
+  {
+   "tag": "MD",
+   "texto": "Nuevos packs de Ryu-Ge y K9"
+  }
+ ],
+ "noticias": [
+  {
+   "tag": "MD",
+   "letrero": "禁止",
+   "letrero_color": "#C6FF3D",
+   "categoria": "Lista de prohibidas",
+   "titulo": "Master Duel cambia su lista de prohibidas",
+   "filas": [
+    [
+     "Vigente desde",
+     "5 de noviembre"
+    ],
+    [
+     "Prohibidas",
+     "Dracotail Phryxul, Spell Canceller, Protector of the Sanctuary y Go! - D/D/D Divine Zero King Rage"
+    ],
+    [
+     "Limitadas",
+     "Elfnote Tinia, Elfnote Power Patron, Kewl Tune Mix y Kewl Tune Reco"
+    ]
+   ],
+   "pregunta": "¿Te afecta este cambio?",
+   "fuente": "Fuente: anuncio en el juego, vía YGOrganization, 26/10",
+   "fs_valor": 36
+  },
+  {
+   "tag": "TCG",
+   "letrero": "新弾",
+   "letrero_color": "#2EF2FF",
+   "categoria": "Producto",
+   "titulo": "Maze of Machines llega el 19/3/2027",
+   "filas": [
+    [
+     "A la venta",
+     "19 de marzo de 2027"
+    ],
+    [
+     "Tema central",
+     "Máquinas Oscuras, como Slot Machine 777"
+    ],
+    [
+     "Más soporte",
+     "Cubic, Marincess y Ghostrick"
+    ],
+    [
+     "Extra",
+     "10 cartas nuevas de GX"
+    ]
+   ],
+   "pregunta": "¿Vuelven las máquinas?",
+   "fuente": "Fuente: anuncio Konami vía ICv2, 29/10"
+  },
+  {
+   "tag": "OCG",
+   "letrero": "発売",
+   "letrero_color": "#FF3EA5",
+   "categoria": "Producto",
+   "titulo": "Immortal Phoenix ya salió en Japón",
+   "filas": [
+    [
+     "Salió",
+     "31 de octubre (OCG)"
+    ],
+    [
+     "Formato",
+     "Sobres de 5, cajas de 30"
+    ],
+    [
+     "¿Y en TCG?",
+     "28/1/2027 en Europa"
+    ],
+    [
+     "Lo destacado",
+     "10 cartas de Dios Solar (Ra)"
+    ]
+   ],
+   "pregunta": "¿Lo esperas para enero?",
+   "fuente": "Fuente: Konami OCG y yugioh-card.com Europa"
+  },
+  {
+   "tag": "MD",
+   "letrero": "速報",
+   "letrero_color": "#C6FF3D",
+   "categoria": "Master Duel",
+   "titulo": "Nuevos packs de Ryu-Ge y K9",
+   "filas": [
+    [
+     "Packs",
+     "Uno de Ryu-Ge y uno de K9"
+    ],
+    [
+     "Hasta",
+     "4 de diciembre"
+    ],
+    [
+     "Regalo",
+     "1 sobre gratis de cada uno"
+    ],
+    [
+     "Además",
+     "Millennium Selection hasta el 5/11"
+    ]
+   ],
+   "pregunta": "¿Ryu-Ge o K9?",
+   "fuente": "Fuente: anuncio en el juego, vía YGOrganization, 26/10"
+  }
+ ],
+ "fuentes": [
+  [
+   "Lista y packs de Master Duel",
+   "YGOrganization · 26/10 (anuncio en el juego)"
+  ],
+  [
+   "Maze of Machines",
+   "ICv2 y CardsRealm · 29/10"
+  ],
+  [
+   "Immortal Phoenix OCG",
+   "Konami OCG vía Yu-Gi-Oh! Meta"
+  ],
+  [
+   "Immortal Phoenix TCG",
+   "yugioh-card.com Europa"
+  ]
+ ]
+}

@@ -34,7 +34,8 @@ def cover(d):
 <div class='swipe' style='top:1360px'>{'Sigue mirando ▸▸' if d.get('modo') == 'video' else 'Desliza para el detalle ▸▸'}</div>""")
 
 def _flow(s, rumor):
-    rows = "".join(f"<div class='row'><div class='k'>{k}</div><div class='v'>{v}</div></div>" for k, v in s['filas'])
+    fsv = f" style='font-size:{s['fs_valor']}px'" if s.get('fs_valor') else ""
+    rows = "".join(f"<div class='row'><div class='k'>{k}</div><div class='v'{fsv}>{v}</div></div>" for k, v in s['filas'])
     tape2 = (f"<div class='tape' style='position:relative;left:-130px;width:1220px;margin-top:40px;transform:rotate(4deg)'>{'<span>RUMOR · NO CONFIRMADO</span>' * 4}</div>" if rumor else "")
     cls, lab = ("hud r", "LO QUE SE SABE") if rumor else ("hud", "DATOS")
     color = "#FFB020" if rumor else "#8FA6D9"

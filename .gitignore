@@ -1,3 +1,5 @@
 node_modules/
 _html/
 *.mp3
+*_off.png
+*_neon.json

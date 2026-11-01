@@ -99,3 +99,10 @@
 ## Textos en japonés usados (traducción propia, por confirmar)
 - 今週のニュース: noticias de la semana · 速報: último minuto · 新弾: nueva expansión · 決闘者: duelista
 - 禁止: prohibido · 世界: mundial · 発売: lanzamiento · 出典: fuente · 噂: rumor
+
+## Registro semanal
+- Semana 26 oct – 1 nov 2026: video 60 s, pista 04, 2 BORRADORES en Metricool para 1/11 19:00
+  (TikTok id 412900174 · YouTube id 412900211). Esperando "sí" de Bruno. Control agendado lun 2/11 12:00.
+  Próximo aviso: dom 8/11 10:00 (trig_01TFDJyFdApcNksZPt5vuFob).
+- Corrección detectada: el piloto (privado) del 19–25 oct decía "Immortal Phoenix sin fecha TCG"; la fecha TCG
+  ya estaba anunciada (28/1/2027 Europa, 29/1 América según ICv2 del 22/9).

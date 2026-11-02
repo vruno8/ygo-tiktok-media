@@ -1,5 +1,8 @@
 # Proyecto YGO TikTok — registro de decisiones
 
+> ⏸ PROYECTO EN PAUSA desde el 1/11/2026 21:07 (pedido de Bruno). No investigar, generar ni publicar nada
+> hasta que Bruno lo reactive explícitamente. Avisos agendados eliminados. Borradores del 1/11 siguen como borradores.
+
 ## Cuenta y publicación
 - Publicación vía Metricool (plan Free, límite 20 posts). Marca ID 7638648, TikTok @vruno_, zona horaria America/Santiago.
 - Cada post público requiere aprobación explícita de Bruno en el chat antes de programarse.
